@@ -186,3 +186,19 @@ Task 19
  переменную divS3 блок div c классом s4.Выведите
   переменную divS3 в консоль.Изучите что изменилось.
   */
+/*
+let divS3 = document.querySelector('.s3')
+console.log(divS3)
+divS3 = document.querySelector('.s4')
+console.log(divS3)
+*/
+/*Task 20
+Получите c помощью querySelector тег body. 
+С помощью innerHTML присвойте ему пустую строку
+ (...innerHTML = ''). Изучите что произошло.
+  Закомментируйте этот код.
+*/
+/*
+let d2 = document.querySelector('body')
+d2.innerHTML = 'sdf'
+*/
