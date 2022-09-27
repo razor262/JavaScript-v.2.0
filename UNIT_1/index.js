@@ -38,4 +38,5 @@ Task 6
  document.getElementById запишите в данный элемент
   текст 'Hello World'.
 */
-let one = document.getElementById(#one)
+let one = document.getElementById('#out')
+one.innerHTML = 654
