@@ -267,3 +267,64 @@ Task 17
   эту операцию. Попробуйте по очереди вводить 44, 44aaa,
    44.3, a45 . Изучите вывод.
    */
+  /*
+   let t = document.querySelector('.input-in')
+
+   let button = document.querySelector('button')
+    
+    
+   button.onclick = function(){
+       //out.innerHTML = +one.value + +two.value
+       //one.value = []
+       //two.value = []
+       console.log(t = parseFloat(t))
+   }
+*/
+/*
+Task 19
+
+Создайте два input type=number, куда пользователь может 
+ввести отрицательные числа. Выведите на страницу сумму 
+данных чисел. Мы это делали! Зачем? Затем, что нужно 
+понимать как влияет перевод в число с помощью + и parseInt 
+на отрицательные числа!!!
+*/
+/*
+let one = document.querySelector('.input-in')
+let two = document.querySelector('.input-two')
+let out = document.querySelector('.out')
+let button = document.querySelector('button')
+
+
+button.onclick = function(){
+    out.innerHTML = parseInt(one.value) + parseInt(two.value)
+    one.value = []
+    two.value = []
+}
+*/
+/*
+Task 20
+
+Создайте опросник, куда пользователь может ввести имя, 
+фамилию, возраст, род занятий. И кнопку. По нажатию кнопки
+ выведите на страницу предложение 'Уважаемый Иван, Иванов,
+  ваш возраст 33 года, по професси вы ...' куда поставьте 
+  соответствующие данные из inputов.
+  */
+ /*
+  let one = document.querySelector('.input-in')
+  let two = document.querySelector('.input-two')
+  let tree = document.querySelector('.input-tree')
+  let four = document.querySelector('.input-four')
+  let out = document.querySelector('.out')
+  let button = document.querySelector('button')
+  
+  
+  button.onclick = function(){
+      out.innerHTML = 'Уважаемый ' + (one.value) + ' ' + (two.value) + ' ' + 'ваш возраст ' + (tree.value) + ' ' + 'по професси вы ' + (four.value)
+      one.value = []
+      two.value = []
+      tree.value = []
+      four.value = []
+  }
+*/
