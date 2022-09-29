@@ -273,3 +273,69 @@ Task 11
 (событие onchange) выведите value выбранного option
  в out-11.
 */
+/*
+Task 12
+
+Дан input i-120. По нажатию кнопки получите значение
+ из input в переменную, а затем выведите в out-12 typeof 
+ полученной переменной. Typeof позволяет определить тип 
+ данных. Обратите внимание, данная задача уже решена, нужно 
+ убрать комментарии и изучить работу. 
+*/
+/*
+let input = document.querySelector('.i-120')
+let out = document.querySelector('.out-12')
+let button = document.querySelector('.b-12')
+
+button.addEventListener('click', f12)
+
+function f12() {
+    let one = input.value
+    out.innerHTML = typeof one
+}
+*/
+/*
+Task 13
+
+Дан input i-130. В отличие от предыдущего задания - input
+ type number. По нажатию кнопки получите значение из input 
+ в переменную, а затем выведите в out-13 typeof полученной
+  переменной. Typeof позволяет определить тип данных.
+   Если вы правильно все сделали - то удивительно, но тип 
+   данных будет string! Подумайте почему так? 
+*/
+/*
+let input = document.querySelector('.i-130')
+let out = document.querySelector('.out-13')
+let button = document.querySelector('.b-12')
+
+button.addEventListener('click', f12)
+
+function f12() {
+    let one = input.value
+    out.innerHTML = typeof one
+}
+*/
+/*
+Task 14
+
+Дан input i-141 и input-142, type=number. Дан select s-143,
+ который содержит две операции - +, -, *, / . Дана кнопка
+  b-14, при нажатии на которую срабатывает функция f14.
+   Функция выводит в out-14 результат операций выбранной 
+   в 3-м select к числам введенным в первом и втором input.
+    Например выбрано 1 13 +, нужно вывести результат
+     операции 1+13 т.е. 14. 
+    */
+     let input = document.querySelector('.i-141')
+     let summ = document.querySelector('.s-100')
+     let input2 = document.querySelector('.i-142')
+     let out = document.querySelector('.out-14')
+     let button = document.querySelector('.b-14')
+
+     button.addEventListener('click', f14)
+
+     function f14() {
+         let one = +input.value + summ.value + +input2.value
+         out.innerHTML = one
+     }
