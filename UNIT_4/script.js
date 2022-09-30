@@ -134,6 +134,7 @@ Task 7
  больше или равна 6 или 0 если меньше. Для подсчета количества символов в строке
   используйте length.
 */
+/*
 let one = document.querySelector('.i-7')
 let button = document.querySelector('.b-7')
 let out = document.querySelector('.out-7')
@@ -141,13 +142,28 @@ let out = document.querySelector('.out-7')
 button.addEventListener('click', myFunction)
 
 function myFunction() {
-    //out.innerHTML = one.value
-    //alert(one.checked)
 
-    if (one.length >= 6) {
+    out.innerHTML = one.value
+
+    let a = one.value
+    let array = []
+    for (let i = 0; i < a.length; i++) {
+        const element = i;
+        console.log(element)
+        array.push(element)
+        console.log(array)
+    }
+    if (array.length >= 6) {
         out.innerHTML = 1
     } else {
         out.innerHTML = 0
     }
 
-} 
+} */
+/*
+Task 8
+Создайте div.out-8 и кнопку .b-8. При нажатии кнопки создавайте
+ внутри div.out-8 элемент input.i-81 и кнопку .b-81 (innerHTML). 
+ Добавьте на созданную кнопку событие клик и запуск функции f81. 
+ Функция должна в .out-81 выводить value созданного input.i-81.
+ */
