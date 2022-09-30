@@ -167,3 +167,83 @@ Task 8
  Добавьте на созданную кнопку событие клик и запуск функции f81. 
  Функция должна в .out-81 выводить value созданного input.i-81.
  */
+/*
+let one = document.querySelector('.out-8')
+let button = document.querySelector('.b-8')
+
+let count = 0
+
+button.addEventListener('click', myFunction)
+
+function myFunction() {
+
+    let div = document.createElement('div');
+    div.id = 'content';
+    div.className = 'note';
+
+    let input = document.createElement('input');
+    input.id = 'inputS';
+    input.className = 'input';
+    div.appendChild(input);
+
+    const buttonS = document.createElement('button')
+    buttonS.className = "b-81"
+    buttonS.textContent = 'pushing'
+    div.appendChild(buttonS);
+
+    document.body.appendChild(div);
+
+    buttonS.addEventListener('click', f81)
+
+    function f81() {
+
+        one.innerHTML = inputS.value
+        //console.log("push")
+
+    }
+}*/
+/*
+let one = document.querySelector('.i-8')
+let button = document.querySelector('.b-8')
+
+let count = 0
+
+button.addEventListener('click', myFunction)
+
+function myFunction() {
+
+    const div = document.createElement('button')
+    div.className = "myDiv"
+    div.textContent = 'push'
+
+    document.body.appendChild(div);
+    count += 1
+    console.log(count)
+
+    div.addEventListener('click', fragmentS)
+    let two = count
+    function fragmentS() {
+
+        console.log(two)
+
+    }
+}*/
+/*
+let div = document.createElement('div');
+div.id = 'content';
+div.className = 'note';
+
+// create a new heading and add it to the div
+let h2 = document.createElement('h2');
+h2.textContent = 'Add h2 element to the div';
+div.appendChild(h2);
+
+// add div to the document
+document.body.appendChild(div);
+*/
+/*
+Task 9
+Создайте один input(radio).r-9 и button.b-9 - при нажатии на button если radio.r-9 
+выбран (активен, checked) выводите в .out-9 - value прописанное в r-9, либо 0 если
+ не активен.
+*/
