@@ -247,3 +247,23 @@ Task 9
 выбран (активен, checked) выводите в .out-9 - value прописанное в r-9, либо 0 если
  не активен.
 */
+/*
+let one = document.querySelector('.r-9')
+let button = document.querySelector('.b-9')
+let out = document.querySelector('.out-9')
+
+button.addEventListener('click', myFunction)
+
+function myFunction() {
+    if (one.checked == true) {
+        out.innerHTML = 'znachenye'
+    } else {
+        out.innerHTML = 0
+    }
+}
+*/
+/*
+Task 10
+>Создайте input(color).i-10 и button.b-10 - при нажатии на кнопку окрашивайте
+ div.out-10 выбранным цветом (имеется ввиду .style.background = ).
+*/
