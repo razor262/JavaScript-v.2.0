@@ -125,27 +125,27 @@ Task 5
  в .out-5 символ m если число меньше нуля, 0 если число
   равно нулю и 1 если больше.
   */
- /*
-  let input = document.querySelector('.i-5')
-  let out = document.querySelector('.out-5')
-  let button = document.querySelector('.b-5')
-  
-  button.addEventListener('click', f5)
-  
-  function f5() {
-      //console.log(input.value)
-      if(input.value < 0) {
-          //console.log("true")
-          out.innerHTML = 'm'
-      } else if(input.value == 0) {
-        //console.log("true")
-        out.innerHTML = 0
-    }
-      else {
-          out.innerHTML = 1
-          //console.log("false")
-      }
-  }
+/*
+ let input = document.querySelector('.i-5')
+ let out = document.querySelector('.out-5')
+ let button = document.querySelector('.b-5')
+ 
+ button.addEventListener('click', f5)
+ 
+ function f5() {
+     //console.log(input.value)
+     if(input.value < 0) {
+         //console.log("true")
+         out.innerHTML = 'm'
+     } else if(input.value == 0) {
+       //console.log("true")
+       out.innerHTML = 0
+   }
+     else {
+         out.innerHTML = 1
+         //console.log("false")
+     }
+ }
 */
 /*
 Task 6
@@ -327,15 +327,40 @@ Task 14
     Например выбрано 1 13 +, нужно вывести результат
      операции 1+13 т.е. 14. 
     */
-     let input = document.querySelector('.i-141')
-     let summ = document.querySelector('.s-100')
-     let input2 = document.querySelector('.i-142')
-     let out = document.querySelector('.out-14')
-     let button = document.querySelector('.b-14')
+/*
+  let input = document.querySelector('.i-141')
+  let summ = document.querySelector('.s-100')
+  let input2 = document.querySelector('.i-142')
+  let out = document.querySelector('.out-14')
+  let button = document.querySelector('.b-14')
 
-     button.addEventListener('click', f14)
+  button.addEventListener('click', f14)
 
-     function f14() {
-         let one = +input.value + summ.value + +input2.value
-         out.innerHTML = one
-     }
+  function f14() {
+      let one = +input.value + summ.value + +input2.value
+      out.innerHTML = one
+  }
+ */
+/*
+Task 15
+Дан select s-151 и s-152, каждый из которых содержит 1 и 0. Дан select s-153,
+ который содержит две операции - && и || . Дана кнопка b-15, при нажатии на 
+ которую срабатывает функция f15. Функция выводит в out-15 результат логических
+  операций выбранных в 3 select к числам выбранным в первом и втором select.
+   Например выбрано 1 1 &&, нужно вывести результат операции 1&&1 т.е. 1 или 0.
+*/
+/*
+let summ = document.querySelector('.s-100')
+let summ2 = document.querySelector('.s-110')
+let summ3 = document.querySelector('.s-120')
+
+let out = document.querySelector('.out-15')
+let button = document.querySelector('.b-15')
+
+button.addEventListener('click', f15)
+
+function f15() {
+    let one = +summ.value + summ3.value + +summ2.value
+    out.innerHTML = one
+}
+*/
