@@ -267,3 +267,34 @@ Task 10
 >Создайте input(color).i-10 и button.b-10 - при нажатии на кнопку окрашивайте
  div.out-10 выбранным цветом (имеется ввиду .style.background = ).
 */
+/*
+let one = document.querySelector('.i-10')
+let button = document.querySelector('.b-10')
+let out = document.querySelector('.out-10')
+
+button.addEventListener('click', myFunction)
+
+function myFunction() {
+
+    one = document.querySelector('button').style.background =
+        document.querySelector('#one').value
+    console.log(one)
+}
+*/
+/*
+Task 11
+
+Создайте input(color).i-111 и input(color).i-112- два элемента 
+и button.b-11 - при нажатии на кнопку присвойте цвет из первого 
+input в value второго.
+*/
+let button = document.querySelector('.b-11')
+
+button.addEventListener('click', myFunction)
+
+function myFunction() {
+
+    one = document.querySelector('button').style.background =
+        document.querySelector('#two').value
+    console.log(one)
+}
