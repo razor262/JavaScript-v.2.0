@@ -288,13 +288,34 @@ Task 11
 и button.b-11 - при нажатии на кнопку присвойте цвет из первого 
 input в value второго.
 */
+/*
 let button = document.querySelector('.b-11')
+let one = document.querySelector('.i-111')
 
 button.addEventListener('click', myFunction)
 
 function myFunction() {
 
-    one = document.querySelector('button').style.background =
-        document.querySelector('#two').value
-    console.log(one)
+    let two = document.querySelector('.i-112').style.background =
+        document.querySelector('#one').value
+    
+    console.log(two)
+}
+*/
+/*
+Task 12
+
+Создайте input(date).i-12 и button.b-12 - при нажатии на кнопку выводите 
+на в out-12 выбранную в input дату.
+*/
+let button = document.querySelector('.b-12')
+let out = document.querySelector('.out-12')
+
+button.addEventListener('click', myFunction)
+
+function myFunction() {
+
+    out = document.querySelector('#one').value
+    
+    console.log(out)
 }
