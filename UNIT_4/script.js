@@ -315,7 +315,9 @@ button.addEventListener('click', myFunction)
 
 function myFunction() {
 
-    out = document.querySelector('#one').value
-    
+    out = document.querySelector('.i-12').value
+
+    out.textContent = "2019-01-03"
+
     console.log(out)
 }
