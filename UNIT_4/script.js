@@ -308,8 +308,29 @@ Task 12
 Создайте input(date).i-12 и button.b-12 - при нажатии на кнопку выводите 
 на в out-12 выбранную в input дату.
 */
+/*
 let button = document.querySelector('.b-12')
 let out = document.querySelector('.out-12')
+
+button.addEventListener('click', myFunction)
+
+function myFunction() {
+
+    out = document.querySelector('.i-12').value
+
+    out.textContent = "2019-01-03"
+
+    console.log(out)
+}
+*/
+/*
+Task 13
+
+Создайте input(range).i-13. При изменении положения ползунка i-13 
+выводите значение в out-13. Для события используйте oninput.
+*/
+let button = document.querySelector('.b-13')
+let out = document.querySelector('.out-13')
 
 button.addEventListener('click', myFunction)
 
