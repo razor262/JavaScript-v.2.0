@@ -373,3 +373,79 @@ Task 15
 Создайте text-area.t-15, input.i-15 и button.b-15 - при нажатии на кнопку 
 выводите текст из input.i-15 в textarea.t-15 и на страницу в out-15.
 */
+/*
+let areaText = document.querySelector('#t-15')
+let input = document.querySelector('#i2')
+let button = document.querySelector('.b-13')
+let out = document.querySelector('.out-13')
+
+button.addEventListener('click', myFunction)
+
+function myFunction() {
+    areaText.innerHTML = out.value
+
+    out.innerHTML = input.value
+
+    console.log(out)
+}
+*/
+/*
+Task 16
+
+Создайте select.s-16 и button.b-16 - при нажатии на кнопку выводите 
+в out-16 value выбранного option из s-16.
+*/
+/*
+let input = document.querySelector('select')
+let button = document.querySelector('.b-13')
+let out = document.querySelector('.out-13')
+
+button.addEventListener('click', myFunction)
+
+function myFunction() {
+
+    out.innerHTML = input.value
+
+    console.log(out)
+}
+*/
+/*
+Task 17
+
+Создайте select.s-17. Добавьте ему событие onchange, при наступлении которого 
+запускается функция f17. Функция должна выводить в out-17 value выбранного 
+в select option.
+*/
+
+/*
+Task 19
+
+Создайте форму. В ней input(text).i-191 и input(password).i-192 - и кнопку
+ button.b-19. По нажатию кнопки выводите значение text и password в out-19
+  через пробел. Обратите внимание на хитрость. Мы, кнопку сейчас повесили
+   за пределами формы. Чуть позже мы рассмотрим почему это делали.
+*/
+/*
+document.querySelector('#btn-1').onclick = () => {
+    console.log(document.querySelector('#i2').value)
+    let myCheckbox = document.querySelector('#i2')
+    console.log(myCheckbox.checked)
+    if(myCheckbox.checked) {
+        console.log('Нажат')
+    }
+    else {
+        console.log('Не нажат')
+    }
+}
+
+document.querySelector('#btn-2').onclick = (event) => {
+    event.preventDefault()
+    //let text = document.querySelector('#two')
+    //console.log(text.value)
+    //text.value = 'one'
+    let form = document.querySelector('form')
+    console.log(form)
+    console.log(form.elements.two.value)
+    console.log(form.elements.three.value)
+}
+*/
