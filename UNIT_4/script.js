@@ -329,6 +329,8 @@ Task 13
 Создайте input(range).i-13. При изменении положения ползунка i-13 
 выводите значение в out-13. Для события используйте oninput.
 */
+/*
+let input = document.querySelector('.i-13')
 let button = document.querySelector('.b-13')
 let out = document.querySelector('.out-13')
 
@@ -336,9 +338,38 @@ button.addEventListener('click', myFunction)
 
 function myFunction() {
 
-    out = document.querySelector('.i-12').value
-
-    out.textContent = "2019-01-03"
+    out.innerHTML = input.value
 
     console.log(out)
 }
+document.querySelector('#one').oninput = () => {
+    console.log(document.querySelector('#one').value)
+    document.querySelector('span').innerHTML = document.querySelector('#one').value
+}
+*/
+/*
+Task 14
+
+Создайте text-area.t-14 и button.b-14 - при нажатии на кнопку выводите 
+на в out-14 текст введенный в t-14.
+*/
+/*
+let input = document.querySelector('#ta2')
+let button = document.querySelector('.b-13')
+let out = document.querySelector('.out-13')
+
+button.addEventListener('click', myFunction)
+
+function myFunction() {
+
+    out.innerHTML = input.value
+
+    console.log(out)
+}
+*/
+/*
+Task 15
+
+Создайте text-area.t-15, input.i-15 и button.b-15 - при нажатии на кнопку 
+выводите текст из input.i-15 в textarea.t-15 и на страницу в out-15.
+*/
