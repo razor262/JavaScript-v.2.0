@@ -196,3 +196,27 @@ Task 7
 
 Задача решается с помощью цикла.
 */
+let input = document.querySelector('input')
+let button = document.querySelector('.b-1')
+let out = document.querySelector('.out')
+
+button.addEventListener('click', myFunction)
+
+function myFunction() {
+    
+    let one = input.value
+    console.log(one)
+    
+    for (let i = 0; i <= one; i = i - 1) {
+
+        out.innerHTML += i
+
+        //br.textContent = 'Add h2 element to the div';
+        //out.appendChild(br);
+        
+        // add div to the document
+        //document.out.appendChild(br);
+        //console.log(out)
+
+    }
+}
