@@ -195,7 +195,7 @@ Task 7
 4 3 2 1 0
 
 Задача решается с помощью цикла.
-*/
+*//*
 let input = document.querySelector('input')
 let button = document.querySelector('.b-1')
 let out = document.querySelector('.out')
@@ -205,18 +205,29 @@ button.addEventListener('click', myFunction)
 function myFunction() {
     
     let one = input.value
+    let two = one
     console.log(one)
     
-    for (let i = 0; i <= one; i = i - 1) {
+    for (let i = two; i >= 0; i = i - 1) {
 
         out.innerHTML += i
 
-        //br.textContent = 'Add h2 element to the div';
-        //out.appendChild(br);
-        
-        // add div to the document
-        //document.out.appendChild(br);
-        //console.log(out)
-
     }
-}
+}*/
+/*
+Task 8
+
+Есть input i-81 и i-82 куда пользователь может ввести
+ числа больше нуля (проверок не делаем, принимаем
+     как факт). Считаем, что второе число всегда 
+     больше первого. По нажатию кнопки b-8 должна 
+     запускаться функция t8, которая выводит в out-8 
+     числа от первого введенного до второго 
+     включительно, с шагом 1. Разделитель пробел. 
+     Если пользователь ввел 4 и 8 и нажал кнопку, 
+     мы получим:
+
+4 5 6 7 8
+
+Задача решается с помощью цикла.
+*/
