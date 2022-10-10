@@ -231,3 +231,22 @@ Task 8
 
 Задача решается с помощью цикла.
 */
+let input = document.querySelector('.i-81')
+let input_2 = document.querySelector('.i-82')
+let button = document.querySelector('.b-1')
+let out = document.querySelector('.out')
+
+button.addEventListener('click', myFunction)
+
+function myFunction() {
+    
+    let one = input.value
+    let two = input_2.value
+    console.log(one)
+    
+    for (let i = one; i >= two; i = i + 2) {
+
+        out.innerHTML += i
+        console.log(out)
+    }
+}
