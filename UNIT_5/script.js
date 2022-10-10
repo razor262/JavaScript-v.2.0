@@ -231,6 +231,7 @@ Task 8
 
 Задача решается с помощью цикла.
 */
+/*
 let input = document.querySelector('.i-81')
 let input_2 = document.querySelector('.i-82')
 let button = document.querySelector('.b-1')
@@ -240,13 +241,29 @@ button.addEventListener('click', myFunction)
 
 function myFunction() {
     
-    let one = input.value
-    let two = input_2.value
-    console.log(one)
+    let one = +input.value
+    let two = +input_2.value
     
-    for (let i = one; i >= two; i = i + 2) {
-
-        out.innerHTML += i
-        console.log(out)
+    if(one < two) {
+        for (let i = one; i <= two; i = i + 2) {
+            console.log(typeof one)
+            out.innerHTML += i + ' '
+            console.log(out)
+        }
     }
-}
+}*/
+/*
+Task 9
+
+Есть input i-91 и i-92 куда пользователь может ввести числа. По нажатию 
+кнопки b-9 должна запускаться функция t9, которая выводит в out-9 числа
+ от меньшего введенного до большего включительно, с шагом 1. Разделитель
+  пробел. Если пользователь ввел 4 и 8 и нажал кнопку, мы получим:
+
+4 5 6 7 8
+если ввел 8 и 6, то получим
+6 7 8
+
+Задача решается с помощью цикла. Подсказка - вначале делаем проверку,
+ а потом запускаем цикл.
+ */
