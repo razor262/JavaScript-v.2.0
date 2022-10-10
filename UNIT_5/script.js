@@ -266,4 +266,80 @@ Task 9
 
 Задача решается с помощью цикла. Подсказка - вначале делаем проверку,
  а потом запускаем цикл.
- */
+ *//*
+ let input = document.querySelector('.i-81')
+ let input_2 = document.querySelector('.i-82')
+ let button = document.querySelector('.b-1')
+ let out = document.querySelector('.out')
+ 
+ button.addEventListener('click', myFunction)
+ 
+ function myFunction() {
+     
+     let one = +input.value
+     let two = +input_2.value
+     
+     if(one < two) {
+         for (let i = one; i <= two; i = i + 2) {
+             console.log(typeof one)
+             out.innerHTML += i + ' '
+             console.log(out)
+         }
+     } else if(two < one) {
+        for (let j = two; j <= one; j = j + 2) {
+            console.log(typeof one)
+            out.innerHTML += j + ' '
+            console.log(out)
+        }
+    }
+ }*/
+ /*
+ Task 10
+
+Кнопка b-10 запускает функцию t10. Функция должна выводить в out-10 четные 
+годы от 1950 до 2000 включительно. Разделитель - пробел. Задача решается 
+через цикл, а четность - через шаг (равный 2).
+*//*
+let button = document.querySelector('.b-1')
+let out = document.querySelector('.out')
+
+button.addEventListener('click', myFunction)
+
+function myFunction() {
+        
+
+        for (let i = 1950; i <= 2000; i = i + 2) {
+            
+            out.innerHTML += i + ' '
+            console.log(out)
+        }
+    
+}
+*/
+/*
+Task 11
+
+Кнопка b-11 запускает функцию t11. Функция должна: получить все div.div-11 
+перебрать их с помощью цикла. Обращение к div выглядит так elem[i] вывести
+ в out-11 содержимое каждого блока. Разделитель - пробел. В результате 
+ должно получиться так:
+
+one 3 4 two
+*/
+let div = document.querySelectorAll('.one')
+let button = document.querySelector('.b-1')
+let out = document.querySelector('.out')
+
+button.addEventListener('click', myFunction)
+console.log(div)
+function myFunction() {
+        console.log(div)
+        //out.innerHTML = div.innerText
+        
+        for (let i = 0; i < div.length; i = i + 1) {
+            
+            console.log(div[i])
+            
+        }
+    
+}
