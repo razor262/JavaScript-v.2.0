@@ -326,6 +326,7 @@ Task 11
 
 one 3 4 two
 */
+/*
 let div = document.querySelectorAll('.one')
 let button = document.querySelector('.b-1')
 let out = document.querySelector('.out')
@@ -334,7 +335,7 @@ button.addEventListener('click', myFunction)
 console.log(div)
 function myFunction() {
         console.log(div)
-        //out.innerHTML = div.innerText
+        
         
         for (let i = 0; i < div.length; i = i + 1) {
             
@@ -342,4 +343,38 @@ function myFunction() {
             
         }
     
-}
+}*/
+/*
+Task 12
+
+Кнопка b-12 запускает функцию t12. Функция должна: получить все div.div-12 
+перебрать их с помощью цикла. Обращение к div выглядит так elem[i] применить
+ к каждому elem[i].style.background = ‘orange
+ */
+/*
+ let div = document.querySelectorAll('.one')
+ let button = document.querySelector('.b-1')
+ let out = document.querySelector('.out')
+ 
+ button.addEventListener('click', myFunction)
+ console.log(div)
+ function myFunction() {
+         console.log(div)
+         
+         
+         for (let i = 0; i < div.length; i = i + 1) {
+             
+             console.log(div[i])
+             div[i].style.background = 'orange'
+         }
+     
+ }
+ */
+/*
+Task 13
+
+Кнопка b-13 запускает функцию t13. Функция должна: получить все input.i-13 
+перебрать их с помощью цикла. Обращение к элементу выглядит так elem[i]
+применить к каждому elem[i].value, причем к value первого должно равняться 1, 
+второго - 2, третьего - 3... 
+*/
