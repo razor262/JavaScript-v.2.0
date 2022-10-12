@@ -376,7 +376,7 @@ Task 13
 Кнопка b-13 запускает функцию t13. Функция должна: получить все input.i-13 
 перебрать их с помощью цикла. Обращение к элементу выглядит так elem[i]
 применить к каждому elem[i].value, причем к value первого должно равняться 1, 
-второго - 2, третьего - 3...*/ 
+второго - 2, третьего - 3...*//* 
  let div = document.querySelectorAll('.one')
  let button = document.querySelector('.b-1')
  let out = document.querySelector('.out')
@@ -385,12 +385,12 @@ Task 13
  console.log(div)
  function myFunction() {
          console.log(div)
-         
+          
          
          for (let i = 0; i < div.length; i = i + 1) {
              
-             console.log(div[i])
-             div[i].style.background = 'orange'
+             console.log(div[i].value)
+             
          }
      
- }                                                       
+ } */                                                                   
