@@ -402,5 +402,44 @@ Task 13
    вывести в out-14 value выбранного. Проверить 
    выбран ли элемент можно с помощью
     elem[i].checked.
-*/              
+*/
+/*              
+let div = document.querySelectorAll('.one')
+let button = document.querySelector('.b-1')
+let out = document.querySelector('.out')
 
+button.addEventListener('click', myFunction)
+console.log(div)
+function myFunction() {
+        //console.log(div.values)
+         
+        
+        for (let i = 0; i < div.length; i = i + 1) {
+            
+            console.log(div[i].checked)
+            console.log(i)
+            if(div[i].checked == true && i == 0) {
+                alert('100')
+                out.innerHTML = '100'
+            }
+            if(div[i].checked == true && i == 1) {
+                alert('200')
+                out.innerHTML = '200'
+            }
+            if(div[i].checked == true && i == 2) {
+                alert('300')
+                out.innerHTML = '300'
+            }
+            if(div[i].checked == true && i == 3) {
+                alert('400')
+                out.innerHTML = '400'
+            }
+            if(div[i].checked == true && i == 4) {
+                alert('500')
+                out.innerHTML = '500'
+            }
+
+        }
+    
+} 
+*/
