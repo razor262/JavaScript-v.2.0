@@ -74,3 +74,74 @@ for (let i = 1; i < 4; i++) {
         
     }
 }*/
+/*
+
+Task 5
+
+С помощью вложенных циклов, нарисуйте строку:
+
+101010
+101010
+101010
+
+Внешний цикл выводит перенос строки br. Вложенный цикл от 0 до 6 выводит либо 0 либо 1.
+
+let out = document.querySelector('.out')
+let summ = 0*/
+/*
+for (let i = 0; i < 3; i++) {
+    console.log(i)
+     out.innerHTML +='<br>'
+
+    for (let k = 0; k <= 6; k++) {
+        console.log(k)
+         out.innerHTML += k + ' '
+        
+    }
+}*/
+/*
+let array = []
+
+for (let i = 0; i < 3; i++) {
+    console.log(i)
+     out.innerHTML +='<br>'
+
+    for (let k = 0; k <= 5; k++) {
+        console.log(k)
+        if(k % 2 == 0) {
+             out.innerHTML += 1
+        } else{
+               out.innerHTML += 0
+ 
+        }
+                
+    }
+}
+*/
+/*
+
+Task 6
+
+С помощью вложенных циклов, нарисуйте строку:
+
+ 10x01x
+ 10x01x
+ 10x01x
+
+Внешний цикл выводит перенос строки br. Вложенный цикл от 0 до 6 выводит
+либо 0 либо 1 либо х.*/
+
+
+let out = document.querySelector('.out')
+let summ = 0
+
+for (let i = 0; i < 3; i++) {
+    console.log(i)
+     out.innerHTML +='<br>'
+
+    for (let k = 0; k <= 2; k++) {
+        console.log(k)
+         out.innerHTML += k + ' '
+        
+    }
+}
