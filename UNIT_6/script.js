@@ -131,7 +131,7 @@ Task 6
 Внешний цикл выводит перенос строки br. Вложенный цикл от 0 до 6 выводит
 либо 0 либо 1 либо х.*/
 
-
+/*
 let out = document.querySelector('.out')
 let summ = 0
 
@@ -139,9 +139,75 @@ for (let i = 0; i < 3; i++) {
     console.log(i)
      out.innerHTML +='<br>'
 
-    for (let k = 0; k <= 2; k++) {
-        console.log(k)
-         out.innerHTML += k + ' '
+    for (let k = 0; k <= 6; k++) {
+         let one = 0 
+
+        if (one == 0) {
+            one += '1'
+             out.innerhtml += '1' 
+        } 
+        if (one == '0' '1') {
+            one += '0'
+             out.innerhtml += '0' 
+        } 
+
+        //out.innerHTML += '1' + '0' + 'x' + '0' + '1' + 'x'
+         console.log(one)
         
     }
+}*/
+/*
+Task 7
+
+*
+**
+***
+****
+
+Внешний цикл выводит перенос строки br. Вложенный цикл запускается от нуля до i и рисует звездочку.*/
+/*
+let out = document.querySelector('.out')
+let summ = ''
+
+
+for (let i = 0; i < 4; i++) {
+   
+    for (let k = 1; k <= 1; k++) {
+        console.log(summ += '*')
+         out.innerHTML += summ
+
+        
+    }
+     out.innerHTML +='<br>'
+
+}
+*/
+/*
+Task 8
+
+С помощью вложенных циклов, нарисуйте строку:
+
+*****
+****
+***
+**
+*
+
+Внешний цикл выводит перенос строки br. Вложенный цикл рисует звездочки. */
+
+let out = document.querySelector('.out')
+let i
+let k
+
+for ( i = 0; i < 5; i++) {
+   
+    for ( k = 5; k >= 0; k--) {
+        alert([k])
+        console.log('*' + ' ')
+        // out.innerHTML += summ
+
+        
+    }
+     out.innerHTML +='<br>'
+
 }
