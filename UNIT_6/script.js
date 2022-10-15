@@ -194,17 +194,48 @@ Task 8
 *
 
 Внешний цикл выводит перенос строки br. Вложенный цикл рисует звездочки. */
-
+/*
 let out = document.querySelector('.out')
-let i
-let k
+ 
+let summ = '******'
+let one
 
-for ( i = 0; i < 5; i++) {
+for (let i = 0; i < 6; i++) {
    
-    for ( k = 5; k >= 0; k--) {
-        alert([k])
-        console.log('*' + ' ')
+    for (let k = 1; k > 0; k--) {
+        //alert([k])
+        summ = summ.slice(0, -1)
+        
         // out.innerHTML += summ
+
+    }
+     out.innerHTML ='<br>'
+     console.log( summ )
+}
+*/
+/*
+Task 9
+
+С помощью вложенных циклов, нарисуйте строку:
+
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+
+Внешний цикл выводит перенос строки br. 
+Вложенный цикл рисует цифры
+*/
+let out = document.querySelector('.out')
+let summ = ''
+
+
+for (let i = 0; i < 4; i++) {
+   
+    for (let k = 1; k <= 1; k++) {
+        console.log(summ += '*')
+         out.innerHTML += summ
 
         
     }
