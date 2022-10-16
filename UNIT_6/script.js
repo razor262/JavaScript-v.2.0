@@ -226,19 +226,109 @@ Task 9
 
 Внешний цикл выводит перенос строки br. 
 Вложенный цикл рисует цифры
-*/
+*//*
 let out = document.querySelector('.out')
-let summ = ''
+let summ = 0
+let k
+let i
 
-
-for (let i = 0; i < 4; i++) {
+for (i = 0; i <= 5; i++) {
    
-    for (let k = 1; k <= 1; k++) {
-        console.log(summ += '*')
-         out.innerHTML += summ
+    for (k = 1; k <= i; k++) {
+        console.log(i + k)
+        //console.log(summ += k + ' ')
+         out.innerHTML += k + ' '
 
-        
     }
      out.innerHTML +='<br>'
-
+     
 }
+*/
+/*
+Task 10
+
+С помощью вложенных циклов, нарисуйте строку:
+
+01 02 03 04 05 06 07 08 09 10
+11 12 13 14 15 16 17 18 19 20
+21 22 23 24 25 26 27 28 29 30
+31 32 33 34 35 36 37 38 39 40
+41 42 43 44 45 46 47 48 49 50
+
+Внешний цикл выводит перенос строки br и 
+запускается от 0 до 6.
+
+Вложенный цикл рисует цифры от 0 до 9. 
+братите внимание, что первый ряд - есть 
+ведущий нуль. Здесь все просто - проверили,
+ если число меньше 10 - то конкатенируем нуль.
+ */
+/*
+ let out = document.querySelector('.out')
+ let summ = 0
+ let k
+ let i
+ 
+ for (i = 1; i <= 5; i++) {
+    
+     for (k = 1; k <= 10; k++) {
+         console.log(summ += 1)
+         //console.log(summ += k + ' ')
+         if(summ < 10){
+            out.innerHTML += '0' + summ + ' '
+         } else{
+            out.innerHTML += summ + ' '
+         }
+          
+ 
+     }
+      out.innerHTML +='<br>'
+      
+ }
+ */
+/*
+Используя вложенные циклы создайте таблицу 
+умножения от 1 до 10. Т.е. вначале столбец 1x1,
+ 1x2...1x9 потом 2x1, 2x2 ... 2x9 и так далее.
+  Оформить в виде столбцов где выводятся
+   множители и результат.
+   *//*
+   let out = document.querySelector('.out')
+
+   
+   for (let i = 1; i <= 5; i++) {
+      
+       for (let k = 1; k <= 10; k++) {
+           console.log(`${i}*${k}=${i * k}`)
+           //console.log(summ += k + ' ')
+              out.innerHTML += `${i}*${k}=${i * k}<br>`
+           
+            
+   
+       }
+        //out.innerHTML +='<br>'
+        
+   }*/
+   /*
+   С помощью вложенных циклов и символа * нарисуйте:
+
+   *****
+   *****
+   *****
+*//*
+let out = document.querySelector('.out')
+let summ = 0
+let k
+let i
+
+for (i = 0; i <= 2; i++) {
+   
+    for (k = 1; k <= 5; k++) {
+        console.log('*')
+        //console.log(summ += k + ' ')
+           out.innerHTML += '*'         
+
+    }
+     out.innerHTML +='<br>'
+     
+}*/
