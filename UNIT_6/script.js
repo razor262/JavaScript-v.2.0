@@ -332,3 +332,59 @@ for (i = 0; i <= 2; i++) {
      out.innerHTML +='<br>'
      
 }*/
+/*
+С помощью вложенных циклов и символа * нарисуйте:
+
+   *****
+   ****
+   ***
+   **
+   *
+ */
+/*
+let out = document.querySelector('.out')
+ 
+let summ = '******'
+let one
+
+for (let i = 0; i < 6; i++) {
+   
+    for (let k = 1; k > 0; k--) {
+        //alert([k])
+        summ = summ.slice(0, -1)
+        
+        // out.innerHTML += summ
+
+    }
+     out.innerHTML ='<br>'
+     console.log( summ )
+}
+*/
+/*
+
+С помощью вложенных циклов и символа * нарисуйте:
+
+     *****
+    *****
+   *****
+*/
+let out = document.querySelector('.out')
+ 
+let summ = '******'
+let one
+
+for (let i = 0; i <= 2; i++) {
+   
+    for (let k = 0; k < 1; k++) {
+        //alert([k])
+        if (i == 0 && k == 0) {
+            out.innerHTML += '*'
+            console.log(' ')
+        }       
+        // out.innerHTML += summ
+
+    }
+     out.innerHTML ='<br>'
+     console.log( summ )
+}
+
