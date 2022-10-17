@@ -100,4 +100,23 @@ function myFunction() {
 Task 6
 
 Напишите функцию t6, которая принимает 2 числа и возвращает случайное целое число от первого до второго принятого параметра.*/ 
+let min = document.querySelector('.input1')
+let max = document.querySelector('.input2')
 
+let button = document.querySelector('.b-1')
+
+button.addEventListener("click", getRandomIntInclusive)
+
+/*
+function getRandomIntInclusive() {
+    alert(min.value)
+}*/
+
+
+function getRandomIntInclusive(min, max) {
+  
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //Максимум и минимум включаются
+}
+// getRandomIntInclusive(min, max)
