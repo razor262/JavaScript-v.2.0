@@ -31,4 +31,15 @@ function t2() {
 document.querySelector(‘.b-2’).onclick =function() {
     document.querySelector(‘.out-2’).textContent = f2();
 }
+*//*
+let a2 = 8;
+function f2() {
+ return a2
+}
+document.querySelector('.b-1').onclick =function() {
+    document.querySelector('.out').textContent = f2();
+
+}
 */
+/*
+
