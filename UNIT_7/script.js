@@ -42,4 +42,62 @@ document.querySelector('.b-1').onclick =function() {
 }
 */
 /*
+Task 3
+
+Наша предыдущая функция, сильно все еще зависима от внешних переменных. Давайте сделаем ее более универсальной. Пусть функция t3 принимает 2 параметра и выводит их произведение. Допишите код функции так, чтобы она возвращала произведение двух чисел, переданных ей в качестве параметра a, b. Протестируем функцию на двух примерах, с помощью кнопок b3-1 и b3-2.
+
+function t3(a,b) {
+
+}
+document.querySelector(‘.b-3-1’).onclick =function() {
+    document.querySelector(‘.out-3-1’).textContent = t3(3,4);
+}
+document.querySelector(‘.b-3-2’).onclick = function(){
+    document.querySelector(‘.out-3-2’).textContent = t3(5,6);
+}
+*/
+/*
+
+function t3(a,b) {
+    return a * b
+}
+document.querySelector('.b-1').onclick =function() {
+    document.querySelector('.out').textContent = t3(3,4);
+}
+document.querySelector('.b-2').onclick = function(){
+    document.querySelector('.out').textContent = t3(5,6);
+}
+*/
+/*
+Task 4
+
+Напишите функцию t4 которая принимает ваш год рождения и вычисляет ваш возраст.*//*
+let input = document.querySelector('.input')
+let button = document.querySelector('.b-1')
+//console.log(input)
+button.addEventListener("click", myFunction)
+
+function myFunction() {
+    //console.log(input.value)
+    console.log(2022 - input.value)
+}*/
+/*
+Task 5
+
+Напишите функцию t5, которая принимает ваше имя в качестве параметра и возвращает строку Hello name, где name - принятое в качестве параметра имя.
+*//*
+let input = document.querySelector('.input')
+let button = document.querySelector('.b-1')
+//console.log(input)
+button.addEventListener("click", myFunction)
+
+function myFunction() {
+    //console.log(input.value)
+    console.log('hello ' + input.value)
+}
+*/
+/*
+Task 6
+
+Напишите функцию t6, которая принимает 2 числа и возвращает случайное целое число от первого до второго принятого параметра.*/ 
 
