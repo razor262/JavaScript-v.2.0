@@ -367,7 +367,7 @@ for (let i = 0; i < 6; i++) {
      *****
     *****
    *****
-*/
+*//*
 let out = document.querySelector('.out')
  
 let summ = '******'
@@ -378,13 +378,22 @@ for (let i = 0; i <= 2; i++) {
     for (let k = 0; k < 1; k++) {
         //alert([k])
         if (i == 0 && k == 0) {
+            out.innerHTML += ' '
+            console.log(1)
+        } else if (i == 0 && k == 1) {
+            out.innerHTML += ' '
+            console.log(2)
+        } else if (i == 1 && k == 0) {
+            out.innerHTML += ' '
+            console.log(3)
+        } else {
             out.innerHTML += '*'
-            console.log(' ')
-        }       
+        } 
+        console.log(k)
         // out.innerHTML += summ
 
     }
      out.innerHTML ='<br>'
      console.log( summ )
 }
-
+*/
