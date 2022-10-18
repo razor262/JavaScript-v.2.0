@@ -59,6 +59,14 @@ document.querySelector('.b-3').onclick = t3;
 
 
 function t4() {
+let four = 80 
+
+while (four > 35) {
+   four -= 3
+   document.querySelector('.out-4').innerHTML += four + '_'
+   //tree-=1
+   console.log(four) 
+}
 
 }
 
@@ -71,6 +79,19 @@ document.querySelector('.b-4').onclick = t4;
 // от 1 до 17 c шагом 1. Разделитель - знак подчеркивания и звездочка (если число нечетное, и две звездочки если четное). Задача решается с помощью цикла  while.
 
 function t5() {
+let five = 1 
+//alert('work')
+while (five <=17) {
+  if (five % 2 == 0) {
+      document.querySelector('.out-5').innerHTML += five + '_' + '**'
+      five +=1
+       console.log(five) 
+  } else {
+      document.querySelector('.out-5').innerHTML += five + '_' + '*'
+      five +=1
+      console.log(five) 
+  } 
+}
 
 }
 
@@ -86,9 +107,16 @@ document.querySelector('.b-5').onclick = t5;
 // Количество строк (итераций, повторений) цикла  while вводит пользователь в i-6.
 
 function t6() {
-
+   let one = 0
+   //console.log(input.value)
+   //console.log(typeof input) 
+   while (one < input.value) {
+      document.querySelector('.out-6').innerHTML += '******' + '<br>'
+      one++
+     
+   }
 }
-
+let input = document.querySelector('.i-6')
 document.querySelector('.b-6').onclick = t6;
 
 
