@@ -112,7 +112,7 @@ getRandomInt(3, 8)
 Task 7
 
 Напишите функцию t7, которая возвращает случайный цвет в формате rgb(x,y,z) (строка). Где x,y,z - случайные числа в диапазоне [0, 255].
-*/
+*//*
 let one
 function getRandomInt(min, max) {
       min = Math.ceil(min);
@@ -135,11 +135,47 @@ console.log(two)
 
 
 let tree
-function my(min, max) {
+function myfTree(min, max) {
       min = Math.ceil(min);
   max = Math.floor(max);
-  two = Math.floor(Math.random() * (max - min)) + min; //Максимум не включается, минимум включается
+  tree = Math.floor(Math.random() * (max - min)) + min; //Максимум не включается, минимум включается
     
 }
-myFunction(0, 255)
-console.log(two)
+myfTree(0, 255)
+console.log(tree)
+console.log('rgb ' + one, two, tree) */
+/*
+Task 8
+Напишите функцию t8, которая принимает строку в качестве параметра и возвращает результат с очищенными пробелами в начале и вконце строки. Т.е. принимает _hello_ (где знак _ символизирует пробел), а возвращает hello. Для удаления пробелов - используйте trim.*//*
+let one = ' hello '
+
+console.log(one.trim())*/
+/*
+Task 9
+Напишите функцию t9, которая принимает число и возвращает true, если число четное, и false если не четное.
+*//* 
+function myFunction(one) {
+   if(one % 2 == 0){
+    console.log('true')
+   } else{
+    console.log('false')
+   } 
+}
+myFunction(4)
+*/
+/*
+Task 10
+Создайте функцию t10, которая принимает 2 числа и возвращает большее из них. В случае равенства - любое из чисел.*/
+/*
+function myFunction(param1, param2) {
+    if(param1 > param2){
+        console.log(param1)
+    } else if(param2 > param1){
+        console.log(param2)
+    } else{
+        console.log('они равны')
+    }
+    
+}
+myFunction(10, 8)
+*/
