@@ -24,7 +24,7 @@ let two = 2
 
 while (two <= 122) {
    document.querySelector('.out-2').innerHTML += two + ' '
-   two+2
+   two+=2
    console.log(two) 
 }
 
@@ -39,6 +39,14 @@ document.querySelector('.b-2').onclick = t2;
 // от 25 до 7 c шагом 1. Разделитель - пробел. Задача решается с помощью цикла  while.
 
 function t3() {
+let tree = 26 
+
+while (tree > 7) {
+   tree -= 1
+   document.querySelector('.out-3').innerHTML += tree + ' '
+   //tree-=1
+   console.log(tree) 
+}
 
 }
 
