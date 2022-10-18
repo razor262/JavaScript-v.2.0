@@ -100,23 +100,46 @@ function myFunction() {
 Task 6
 
 Напишите функцию t6, которая принимает 2 числа и возвращает случайное целое число от первого до второго принятого параметра.*/ 
-let min = document.querySelector('.input1')
-let max = document.querySelector('.input2')
-
-let button = document.querySelector('.b-1')
-
-button.addEventListener("click", getRandomIntInclusive)
-
 /*
-function getRandomIntInclusive() {
-    alert(min.value)
-}*/
-
-
-function getRandomIntInclusive(min, max) {
-  
+function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min; //Максимум и минимум включаются
+  return Math.floor(Math.random() * (max - min)) + min; //Максимум не включается, минимум включается
 }
-// getRandomIntInclusive(min, max)
+getRandomInt(3, 8)
+*/
+/*
+Task 7
+
+Напишите функцию t7, которая возвращает случайный цвет в формате rgb(x,y,z) (строка). Где x,y,z - случайные числа в диапазоне [0, 255].
+*/
+let one
+function getRandomInt(min, max) {
+      min = Math.ceil(min);
+  max = Math.floor(max);
+  one = Math.floor(Math.random() * (max - min)) + min; //Максимум не включается, минимум включается
+    
+}
+getRandomInt(0, 255)
+console.log(one)
+
+let two
+function myFunction(min, max) {
+      min = Math.ceil(min);
+  max = Math.floor(max);
+  two = Math.floor(Math.random() * (max - min)) + min; //Максимум не включается, минимум включается
+    
+}
+myFunction(0, 255)
+console.log(two)
+
+
+let tree
+function my(min, max) {
+      min = Math.ceil(min);
+  max = Math.floor(max);
+  two = Math.floor(Math.random() * (max - min)) + min; //Максимум не включается, минимум включается
+    
+}
+myFunction(0, 255)
+console.log(two)
