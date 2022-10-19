@@ -222,12 +222,20 @@ document.querySelector('.b-10').onclick = t10;
 // вывести в out-11 содержимое каждого блока. Разделитель - пробел.
 //     В результате должно получиться так:
 //     one 3 4 two
-
+let array = ''
 
 function t11() {
-
+   // console.log(typeof elem[1])
+    let i = 0
+   while (i < elem.length) {
+      
+      document.querySelector('.out-11').innerHTML += elem[i].innerHTML + '<br>'
+      console.log(elem[i])
+      i++
+   }
+   
 }
-
+let elem = document.querySelectorAll('.div-11')
 document.querySelector('.b-11').onclick = t11;
 
 //  Task 12
@@ -238,9 +246,16 @@ document.querySelector('.b-11').onclick = t11;
 
 
 function t12() {
-
+  // console.log(elems)
+   let condition = 0
+   while (condition < elems.length) {
+      elems[condition].style.background = 'orange'
+      
+      console.log(elems[condition])
+      condition++
+   }
 }
-
+let elems = document.querySelectorAll('.div-12')
 document.querySelector('.b-12').onclick = t12;
 
 //  Task 13
@@ -250,9 +265,15 @@ document.querySelector('.b-12').onclick = t12;
 // применить к каждому elem[i].value, причем к value первого должно равняться 1, второго - 2, третьего - 3...
 
 function t13() {
-
+   console.log(input123)
+   let i = 0
+   while (i < input123.length) {
+     console.log(input123[i]) 
+     input123[i].value = i + 1
+     i++
+   }
 }
-
+let input123 = document.querySelectorAll('.i-13') 
 document.querySelector('.b-13').onclick = t13;
 
 //  Task 14
