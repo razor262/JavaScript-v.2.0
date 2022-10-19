@@ -284,9 +284,28 @@ document.querySelector('.b-13').onclick = t13;
 
 
 function t14() {
+   console.log(inputCheck)
+   let i = 0
+   while (i < inputCheck.length) {
+     console.log(inputCheck[i].value) 
+     
+   if (inputCheck[i].checked == true && i == 0) {
+       console.log('0') 
+         out14.innerHTML = inputCheck[0].value
+     } else if (inputCheck[i].checked == true && i == 1) {
+       console.log('1') 
+         out14.innerHTML = inputCheck[1].value
+     } else if (inputCheck[i].checked == true && i == 2) {
+       console.log('2') 
+         out14.innerHTML = inputCheck[2].value
+     }
 
+ 
+     i++
+   }
 }
-
+let out14 = document.querySelector('.out-14')
+let inputCheck = document.querySelectorAll('.i-14')
 document.querySelector('.b-14').onclick = t14;
 
 //  Task 15
