@@ -128,9 +128,16 @@ document.querySelector('.b-6').onclick = t6;
 // Задача решается с помощью цикла  while.
 
 function t7() {
+   console.log(inputs.value)
+   let ones = +inputs.value
+   console.log(typeof ones)
+  while (ones >= 0) {
+    document.querySelector('.out-7').innerHTML += ones + ' '
+    ones--  
+  }
 
 }
-
+let inputs = document.querySelector('.i-7');
 document.querySelector('.b-7').onclick = t7;
 
 
@@ -143,8 +150,18 @@ document.querySelector('.b-7').onclick = t7;
 // Задача решается с помощью цикла  while.
 
 function t8() {
+   let ones1 = +inputs1.value
+   let ones2 = +inputs2.value
+
+   console.log(typeof ones1)
+  while (ones1 <= ones2) {
+    document.querySelector('.out-8').innerHTML += ones1 + ' '
+    ones1++  
+  }
 
 }
+let inputs1 = document.querySelector('.i-81');
+let inputs2 = document.querySelector('.i-82');
 
 document.querySelector('.b-8').onclick = t8;
 
@@ -159,8 +176,25 @@ document.querySelector('.b-8').onclick = t8;
 // Задача решается с помощью цикла. Подсказка - вначале делаем проверку, а потом запускаем цикл  while.
 
 function t9() {
+ //  let ons1 = +input11.value
+ // let ons2 = +input22.value
+   let ons1 = +input11.value
+   let ons2 = +input22.value
+   
+   console.log(typeof ons1)
+   while (ons1 < ons2) {
+    document.querySelector('.out-9').innerHTML += ons1 + ' '
+    ons1++  
+  }
+   while (ons2 <= ons1) {
+    document.querySelector('.out-9').innerHTML += ons2 + ' '
+    ons2++  
+  }
 
+  
 }
+let input11 = document.querySelector('.i-91');
+let input22 = document.querySelector('.i-92');
 
 document.querySelector('.b-9').onclick = t9;
 
