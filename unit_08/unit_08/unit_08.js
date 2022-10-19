@@ -204,9 +204,15 @@ document.querySelector('.b-9').onclick = t9;
 // Разделитель - пробел. Задача решается через цикл, а четность - через шаг (равный 2).
 
 function t10() {
-
+let year = 1950
+let future = 2000
+while (year <= 2000) {
+     
+     document.querySelector('.out-10').innerHTML += year + ' '
+     year += 2
+     console.log(year)
 }
-
+}
 document.querySelector('.b-10').onclick = t10;
 
 //  Task 11
