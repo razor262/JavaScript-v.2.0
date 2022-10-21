@@ -150,23 +150,36 @@ document.querySelector('.b-11').onclick = f11;
 
 
 function f12() {
+let div = document.createElement('div')
+div.textContent = '12'
+div.className = 'bg-12'
 
+out12.append(div)
 }
-
+let out12 = document.querySelector('.out-12')
 document.querySelector('.b-12').onclick = f12;
 
 //  Task 13
 // Добавьте кнопку .b-13, которая запускает функцию f13. Функция создает через createElement div c текстом pushMe и добавляет ему класс bg-13. Также, созданному div добавляется событие onclick, по которому выполняется функция f13_1. Созданный div добавляется в out-13.
 
 function f13() {
+    let div = document.createElement('div')
+    div.textContent = 'pushMe'
+    div.className = 'bg-13'
+    div.onclick = function () {
+            console.log('hello')
+    }
 
+    out13.append(div)
+    out13.addEventListener('click', f13_1)
 }
 
 function f13_1() {
+    console.log('this me')
     document.querySelector('.out-13-1').innerHTML += this.innerHTML;
 }
 
-
+let out13 = document.querySelector('.out-13')
 document.querySelector('.b-13').onclick = f13;
 
 //  Task 14
@@ -174,18 +187,25 @@ document.querySelector('.b-13').onclick = f13;
 
 
 function f14() {
-
+    let div = document.createElement('div')
+    div.textContent = '14'
+    div.classList.add('bg-14')
+    out14.prepend(div)
 }
-
+let out14 = document.querySelector('.out-14')
 document.querySelector('.b-14').onclick = f14;
 
 //  Task 15
 // Добавьте кнопку .b-15, которая запускает функцию f15. Функция создает через createElement div c текстом 15 и добавляет ему класс bg-15. Созданный div добавляется в out-15 с помощью before.
 
 function f15() {
+    let div = document.createElement('div')
+    div.textContent = '15'
+    div.className = 'dg-15'
+    out15.before(div)
 
 }
-
+let out15 = document.querySelector('.out-15')
 document.querySelector('.b-15').onclick = f15;
 
 //  Task 16
