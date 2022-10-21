@@ -68,9 +68,15 @@ document.querySelector('.b-6').onclick = f6;
 let blocks7 = document.querySelectorAll('.out-7');
 
 function f7() {
+    let i = 0
+    while (i < out7.length) {
+       console.log(out7[i]) 
+       out7[i].classList.add('bg-7')
+       i++
+    }
     //внутри цикла blocks7[i].classList....
 }
-
+let out7 = document.querySelectorAll('.out-7')
 document.querySelector('.b-7').onclick = f7;
 
 
