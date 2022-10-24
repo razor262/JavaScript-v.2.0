@@ -31,16 +31,18 @@ document.querySelector('.b-2').onclick = f2;
 // Вывод в out-3
 // Тест допустим массив [1,2,3] вывод - 3
 
-// let ar3 =  // переменную обьявляем здесь!!!!
+let ar3 = '' // переменную обьявляем здесь!!!!
 
 function f3() {
     let array = ['word', 300, 808, 'true']
     for (let i = 0; i <= array.length; i++) {
-        const element = i;
-        console.log(element)
+        ar3 = i;
+        
     }
+    console.log(ar3)
+    out3.innerHTML = ar3
 }
-
+let out3 = document.querySelector('.out-3')
 document.querySelector('.b-3').onclick = f3;
 
 // Task 4
