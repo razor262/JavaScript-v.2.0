@@ -251,8 +251,15 @@ document.querySelector('.b-18').onclick = f18;
 
 function f19() {
     let one1 = document.querySelectorAll('.p-19')
-    let twos = one1.getAttribute('data-b')
-    out19.innerHTML += twos
+    
+    let i = 0
+    while (i < one1.length) {
+        i++
+        console.log(one1[i])
+        let twos = one1[i].getAttribute('data-b')
+        out19.innerHTML += twos + ' '
+    }
+
 }
 let out19 = document.querySelector('.out-19')
 document.querySelector('.b-19').onclick = f19;
@@ -262,6 +269,8 @@ document.querySelector('.b-19').onclick = f19;
 
 function f20() {
 
-}
+    out20.setAttribute('title', 'go')
 
+}
+let out20 = document.querySelector('.out-20')
 document.querySelector('.b-20').onclick = f20;
