@@ -1,12 +1,12 @@
 // Task 1
 //Создайте массив ar1 содержащий строки, числа, булевы значения. Выведите его в .out-1. Вывод - по нажатию кнопки b-1
 
-// let ar1 = // переменную обьявляем здесь!!!!
+let ar1 = ['true', 65, 6969]
 
 function f1() {
-    //ваш_элемент.innerHTML = ar1; // да так можно выводить!!!!
+    out1.innerHTML = ar1
 }
-
+let out1 = document.querySelector('.out-1')
 document.querySelector('.b-1').onclick = f1;
 
 // Task 2
@@ -15,11 +15,12 @@ document.querySelector('.b-1').onclick = f1;
 // let ar2 = // переменную обьявляем здесь!!!!
 
 function f2() {
-    // let out = '';
-    // for (let i = 0; i < ar2.length; i++) {
-    //     out +=arr2[i]+' ';
-    // }
-    // document.querySelector('.out-2').innerHTML = out;
+    let out = ''
+    let ar2 = ['true', 500, 'yes', 7983];
+    for (let i = 0; i < ar2.length; i++) {
+       out +=ar2[i]+' ';
+    }
+    document.querySelector('.out-2').innerHTML = out;
 }
 
 document.querySelector('.b-2').onclick = f2;
@@ -33,6 +34,11 @@ document.querySelector('.b-2').onclick = f2;
 // let ar3 =  // переменную обьявляем здесь!!!!
 
 function f3() {
+    let array = ['word', 300, 808, 'true']
+    for (let i = 0; i <= array.length; i++) {
+        const element = i;
+        console.log(element)
+    }
 }
 
 document.querySelector('.b-3').onclick = f3;
