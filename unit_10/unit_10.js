@@ -52,11 +52,17 @@ document.querySelector('.b-3').onclick = f3;
 // Вывод в out-4
 // Тест допустим массив [1,2,3,4,5,6,7,8,9,10] вывод: 1 4 9
 
-// let ar4 =  // переменную обьявляем эту здесь!!!!
+let array4 = ''
+
 
 function f4() {
-}
 
+    let ar4 = ['word', 300, 808, 'true',556, 655, 2323, 112323, 'sd', 656666,]
+    
+    array4 += ar4[0] + ' ' + ar4[2] + ' ' + ar4[3]
+    out4.innerHTML = array4
+}
+let out4 = document.querySelector('.out-4')
 document.querySelector('.b-4').onclick = f4;
 
 // Task 5
@@ -66,9 +72,11 @@ document.querySelector('.b-4').onclick = f4;
 // Вывод в out-5
 // Тест допустим массив [1,2,3,4,5,6,7,8,9,10] вывод: 8
 
-// let ar5 =
+ let ar5 = [1,2,3,4,5,6,7,8,9,10]
 
 function f5() {
+
+   
 }
 
 document.querySelector('.b-5').onclick = f5;
