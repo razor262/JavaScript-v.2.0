@@ -73,10 +73,11 @@ document.querySelector('.b-4').onclick = f4;
 // Тест допустим массив [1,2,3,4,5,6,7,8,9,10] вывод: 8
 
  let ar5 = [1,2,3,4,5,6,7,8,9,10]
-
+let arrays = ''
 function f5() {
 
-   
+   arrays += ar5[0] + ar5[2] + ar5[3]
+   console.log(arrays)
 }
 
 document.querySelector('.b-5').onclick = f5;
@@ -87,11 +88,18 @@ document.querySelector('.b-5').onclick = f5;
 // Вывод - по нажатию кнопки b-6
 // Вывод в out-6
 
-// let ar6 =
-
+ let ar6 = [ 'Andrey', 35, 'oven', 24, 03 ]
+let i = 0
 function f6() {
+    while (i < ar6.length) {
+        
+        console.log(ar6[i])
+        out6.innerHTML += ar6[i] + ' '
+        i++
+    }
+    
 }
-
+let out6 = document.querySelector('.out-6')
 document.querySelector('.b-6').onclick = f6;
 
 // Task 7
@@ -103,8 +111,19 @@ document.querySelector('.b-6').onclick = f6;
 let ar7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
 
 function f7() {
+    let i = 0
+    ar7[5] = 'italy' + ' '
+    ar7[6] = 'turkey' + ' '
+    ar7[7] = 'vietnam' + ' '
+    console.log(ar7)
+    while (i < ar7.length) {
+        
+        out7.innerHTML += ar7[i] + ' '
+        i++
+    }
+    
 }
-
+let out7 = document.querySelector('.out-7')
 document.querySelector('.b-7').onclick = f7;
 
 // Task 8
