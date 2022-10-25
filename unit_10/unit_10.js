@@ -158,8 +158,11 @@ document.querySelector('.b-8').onclick = f8;
 // Вывод в out-9
 
 let ar9 = [100, 200, 300, 400, 700, 121];
-
+let lastElement = 0
 function f9() {
+    
+    lastElement = ar9[ar9.length - 1]
+    console.log(lastElement)
 }
 
 document.querySelector('.b-9').onclick = f9;
