@@ -134,10 +134,21 @@ document.querySelector('.b-7').onclick = f7;
 // Вывод в out-8
 
 let ar8 = [];
-
+let k = 0
 function f8() {
+    ar8[3] = 3,14
+    ar8[4] = 17,6
+    ar8[6] = 5
+    console.log(ar8)
+    while (k < ar8.length) {
+        
+        out8.innerHTML += ar8[k] + '-'
+        k++
+    }
+    out81.innerHTML = k
 }
-
+let out81 = document.querySelector('.out-8-1')
+let out8 = document.querySelector('.out-8')
 document.querySelector('.b-8').onclick = f8;
 
 // Task 9
