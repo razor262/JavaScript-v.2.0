@@ -176,8 +176,13 @@ document.querySelector('.b-9').onclick = f9;
 let ar10 = [100, 200, 300, 400, 700, 121];
 
 function f10() {
-}
 
+    let a = ar10[1]
+    a += ar10[ar10.length - 1]
+    console.log(a)
+    out10.innerHTML = a
+}
+let out10 = document.querySelector('.out-10')
 document.querySelector('.b-10').onclick = f10;
 
 
@@ -189,11 +194,13 @@ document.querySelector('.b-10').onclick = f10;
 // Вывод в out-11
 
 let ar11 = [2, 3, 4, 5, 6, 7];
-
+let arr = ''
 function f11() {
-
+    arr = ar11[4]
+    ar11 = ar11[2]
+    console.log(ar11)
 }
-
+let out11 = document.querySelector('.out-11')
 document.querySelector('.b-11').onclick = f11;
 
 
