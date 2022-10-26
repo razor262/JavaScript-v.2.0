@@ -331,11 +331,27 @@ document.querySelector('.b-16').onclick = f16;
 // Вывод в out-17
 
 let ar17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
-
+let n = 0
+let summ17 = ''
+let element17 = 0
 function f17() {
 
+    while (n <= ar17.length) {
+        
+        if (ar17[n] > 3) {
+            summ17 += n
+            //out17.innerHTML += n
+        }
+        n++
+    }
+ 
+    for (let i = 0; i < summ17.length; i++) {
+        element17 = i + 1;
+        console.log(element17)
+    }
+    out17.innerHTML += element17
 }
-
+let out17 = document.querySelector('.out-17')
 document.querySelector('.b-17').onclick = f17;
 
 
