@@ -308,11 +308,20 @@ document.querySelector('.b-15').onclick = f15;
 let ar16 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 let ar16_odd = [];
 let ar16_even = [];
-
+let d = 0
 function f16() {
 
+    while (d < ar16.length) {
+        if (ar16[d] % 2 == 0) {
+            out16even.innerHTML += ar16[d] + ' '
+        } else {
+            out16odd.innerHTML += ar16[d] + ' ' 
+        }
+        d++
+    }
 }
-
+let out16even = document.querySelector('.out-16-even')
+let out16odd = document.querySelector('.out-16-odd')
 document.querySelector('.b-16').onclick = f16;
 
 // Task 17
