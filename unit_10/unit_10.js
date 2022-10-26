@@ -267,11 +267,16 @@ document.querySelector('.b-13').onclick = f13;
 // Вывод в out-14
 
 let ar14 = [1, 2, 3, 'hello', 66];
-
+//let m = 0
+let korzinka = ''
 function f14() {
-
+       
+for (let i = ar14.length - 1; i >= 0; i--) {
+	console.log(ar14[i]);
+    out14.innerHTML += ar14[i] + ' '
 }
-
+}
+let out14 = document.querySelector('.out-14')
 document.querySelector('.b-14').onclick = f14;
 
 // Task 15
@@ -281,11 +286,17 @@ document.querySelector('.b-14').onclick = f14;
 // Вывод в out-15
 
 let ar15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
-
+let fuke = 0
 function f15() {
 
+    while (fuke < ar15.length) {
+        if (ar15[fuke] > 0) {
+            out15.innerHTML += ar15[fuke] += ' '
+        }
+        fuke++
+    }
 }
-
+let out15 = document.querySelector('.out-15')
 document.querySelector('.b-15').onclick = f15;
 
 // Task 16
