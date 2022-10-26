@@ -195,13 +195,18 @@ document.querySelector('.b-10').onclick = f10;
 
 let ar11 = [2, 3, 4, 5, 6, 7];
 let arr = ''
+let s = 0
 function f11() {
     arr = ar11[4]
     ar11[4] = ar11[2]
     ar11[2] = arr
     console.log(arr)
     console.log(ar11)
-    out11.innerHTML = ar11
+    while (s < ar11.length) {
+       
+    out11.innerHTML += ar11[s] + ' '
+        s++
+    }
 }
 let out11 = document.querySelector('.out-11')
 document.querySelector('.b-11').onclick = f11;
@@ -214,7 +219,7 @@ document.querySelector('.b-11').onclick = f11;
 // Вывод в out-12
 
 let ar12 = ['test', 'west', 'list', 'class', 'best'];
-
+let g = 0
 let myPerem = ''
 function f12() {
 
@@ -222,8 +227,13 @@ function f12() {
     ar12[0] = ar12[ar12.length - 1]
     ar12[ar12.length - 1] = myPerem
     console.log(ar12)
+    while (g < ar12.length) {
+        out12.innerHTML += ar12[g] + ' '
+        g++
+    }
+    //out12.innerHTML = ar12
 }
-
+let out12 = document.querySelector('.out-12')
 document.querySelector('.b-12').onclick = f12;
 
 // Task 13
@@ -236,11 +246,17 @@ document.querySelector('.b-12').onclick = f12;
 
 
 let ar13 = ['test', 'west', 'list', 'class', 'best'];
-
+let j = 0
 function f13() {
 
+    while (j < ar13.length) {
+        console.log(j)
+        console.log(ar13[j])
+        out13.innerHTML += j + ' ' + ar12[j] + ' '
+        j++
+    }
 }
-
+let out13 = document.querySelector('.out-13')
 document.querySelector('.b-13').onclick = f13;
 
 
