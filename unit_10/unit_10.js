@@ -197,8 +197,11 @@ let ar11 = [2, 3, 4, 5, 6, 7];
 let arr = ''
 function f11() {
     arr = ar11[4]
-    ar11 = ar11[2]
+    ar11[4] = ar11[2]
+    ar11[2] = arr
+    console.log(arr)
     console.log(ar11)
+    out11.innerHTML = ar11
 }
 let out11 = document.querySelector('.out-11')
 document.querySelector('.b-11').onclick = f11;
@@ -212,8 +215,13 @@ document.querySelector('.b-11').onclick = f11;
 
 let ar12 = ['test', 'west', 'list', 'class', 'best'];
 
+let myPerem = ''
 function f12() {
 
+    myPerem = ar12[0]
+    ar12[0] = ar12[ar12.length - 1]
+    ar12[ar12.length - 1] = myPerem
+    console.log(ar12)
 }
 
 document.querySelector('.b-12').onclick = f12;
