@@ -387,11 +387,20 @@ document.querySelector('.b-18').onclick = f18;
 // Вывод в out-19
 
 let ar19 = [15, 424, 313, 78, 241, 4, 45, 67];
-
+let sum19 = ar19[0]
+let m = 0
 function f19() {
-
+    while (m < ar19.length) {
+        //console.log(ar19[m])
+        if (ar19[m] < sum19) {
+            sum19 = ar19[m]
+        }
+        m++
+    }
+    out19.innerHTML = sum19
+    console.log(sum19)
 }
-
+let out19 = document.querySelector('.out-19')
 document.querySelector('.b-19').onclick = f19;
 
 // Task 20
@@ -403,7 +412,13 @@ document.querySelector('.b-19').onclick = f19;
 let ar20 = [4, 5, 6, 7, 8, 9, 10];
 
 function f20() {
-
+let element20 = 0
+    for (let i = 0; i < ar20.length; i++) {
+        element20 += ar20[i];
+        //console.log(element20)
+    }
+    out20.innerHTML = element20
+    console.log(element20)
 }
-
+let out20 = document.querySelector('.out-20')
 document.querySelector('.b-20').onclick = f20;
