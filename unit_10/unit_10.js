@@ -362,11 +362,21 @@ document.querySelector('.b-17').onclick = f17;
 // Вывод в out-18
 
 let ar18 = [15, 24, 13, 78, 21, 4, 45, 67];
+let sum18 = ''
 
 function f18() {
-
+    //console.log(sum18)
+    for (let i = 0; i < ar18.length; i++) {
+        const element = ar18[i];
+        //console.log(element)
+        if (ar18[i] > sum18) {
+            sum18 = ar18[i]
+        }
+    }
+    out18.innerHTML = sum18
+    console.log(sum18)
 }
-
+let out18 = document.querySelector('.out-18')
 document.querySelector('.b-18').onclick = f18;
 
 
