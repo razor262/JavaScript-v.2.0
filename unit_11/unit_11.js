@@ -13,10 +13,11 @@ let d1 = [33, 'best', 66, 'best'];
 
 function f1() {
     
-     
+     console.log(d1.push(i1.value))
      
     showArr('.out-1', d1);
 }
+let i1 = document.querySelector('.i-1')
 let out1 = document.querySelector('.out-1')
 document.querySelector('.b-1').onclick = f1;
 
@@ -25,10 +26,10 @@ document.querySelector('.b-1').onclick = f1;
 // функция выполняется при нажатии кнопки b-2
 
 function f2() {
-
+    d1.pop()
     showArr('.out-2', d1);
 }
-
+let out2 = document.querySelector('.out-2')
 document.querySelector('.b-2').onclick = f2;
 
 // Task 3
@@ -36,10 +37,10 @@ document.querySelector('.b-2').onclick = f2;
 // функция выполняется при нажатии кнопки b-3
 
 function f3() {
-
+    
     showArr('.out-3', d1);
 }
-
+let out3 = document.querySelector('.out-3')
 document.querySelector('.b-3').onclick = f3;
 
 // Task 4
