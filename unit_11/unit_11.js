@@ -37,7 +37,7 @@ document.querySelector('.b-2').onclick = f2;
 // функция выполняется при нажатии кнопки b-3
 
 function f3() {
-    
+    d1.shift()
     showArr('.out-3', d1);
 }
 let out3 = document.querySelector('.out-3')
@@ -49,10 +49,11 @@ document.querySelector('.b-3').onclick = f3;
 
 
 function f4() {
-
+    d1.push(i4.value)
     showArr('.out-4', d1);
 }
-
+let i4 = document.querySelector('.i-4')
+let out4 = document.querySelector('.out-4')
 document.querySelector('.b-4').onclick = f4;
 
 // Task 5
@@ -61,9 +62,11 @@ document.querySelector('.b-4').onclick = f4;
 
 function f5() {
 
+    d1.unshift(i5.value)
     showArr('.out-5', d1);
 }
-
+let i5 = document.querySelector('.i-5')
+//let out5 = document.querySelector('.out-5')
 document.querySelector('.b-5').onclick = f5;
 
 // Task 6
@@ -73,12 +76,14 @@ document.querySelector('.b-5').onclick = f5;
 // Вывод в out-6
 
 let d6 = ['test', 5, 12];
-
+let element
 function f6() {
-
+    //console.log(i6.value)
+ 
+    d6[d6.length - 1] = i6.value
     showArr('.out-6', d6);
 }
-
+let i6 = document.querySelector('.i-6')
 document.querySelector('.b-6').onclick = f6;
 
 // Task 7
