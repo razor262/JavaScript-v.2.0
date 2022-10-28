@@ -12,12 +12,12 @@ function showArr(domElem, arr) {
 let d1 = [33, 'best', 66, 'best'];
 
 function f1() {
-    /**
-     * ваш код здесь
-     */
+    
+     
+     
     showArr('.out-1', d1);
 }
-
+let out1 = document.querySelector('.out-1')
 document.querySelector('.b-1').onclick = f1;
 
 // Task 2
