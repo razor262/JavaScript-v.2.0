@@ -209,12 +209,19 @@ document.querySelector('.b-12').onclick = f12;
 
 
 let d13 = [6, 0, 22, 1, 4, 76];
-
+let element13 = ''
 function f13() {
 
-    showArr('.out-13', d13);
+    for (let i = d13.length - 1; i >= 0; i--) {
+       
+        console.log(i)
+        
+        out13.innerHTML += d13[i] + ' '
+    }
+    
+    //showArr('.out-13', d13);
 }
-
+let out13 = document.querySelector('.out-13')
 document.querySelector('.b-13').onclick = f13;
 
 
