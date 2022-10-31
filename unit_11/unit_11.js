@@ -182,11 +182,23 @@ document.querySelector('.b-11').onclick = f11;
 // Вывод в out-12
 
 let d12 = [6, 62, 60, 70, 1, 5];
-
+let e = 0
+let sum12 = ''
 function f12() {
 
+    while (e < d12.length) {
+        if (d12[e] == i12.value) {
+            console.log(e)
+            sum12 = e
+            out12.innerHTML = sum12
+        }
+        e++
+    }
+    out12.innerHTML = sum12 || '-1'
+    console.log(i12.value)
 }
-
+let i12 = document.querySelector('.i-12')
+let out12 = document.querySelector('.out-12')
 document.querySelector('.b-12').onclick = f12;
 
 // Task 13
