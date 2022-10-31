@@ -94,8 +94,14 @@ document.querySelector('.b-6').onclick = f6;
 
 let d7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
 
+let l = 0
 function f7() {
-
+   
+    while (l < d7.length) {
+        d7[d7.length - 1] = ''
+        console.log(d7)
+        l++
+    }
     showArr('.out-7', d7);
 }
 
@@ -111,9 +117,10 @@ let d8 = [2, '4', 12, 67, 'hello'];
 
 function f8() {
 
+    d8[0] = i8.value
     showArr('.out-8', d8);
 }
-
+let i8 = document.querySelector('.i-8')
 document.querySelector('.b-8').onclick = f8;
 
 // Task 9
@@ -126,6 +133,7 @@ let d9 = [100, 200, 300, 400, 700, 121];
 
 function f9() {
 
+    d9[0] = ''
     showArr('.out-9', d9);
 }
 
@@ -141,9 +149,10 @@ let d10 = [3, 14, 15, 92, 6];
 
 function f10() {
 
+    d10 = d10.reverse()
     showArr('.out-10', d10);
 }
-
+let out10 = document.querySelector('.out-10')
 document.querySelector('.b-10').onclick = f10;
 
 
@@ -154,11 +163,15 @@ document.querySelector('.b-10').onclick = f10;
 // Вывод в out-11
 
 let d11 = [2, 3, 4, 5, 6, 7];
-
+let myPerem11 = 0
 function f11() {
-
+    //console.log(typeof +i11.value)
+    myPerem11 = d11.indexOf(+i11.value)
+    console.log(myPerem11)
+    out11.innerHTML = myPerem11
 }
-
+let i11 = document.querySelector('.i-11')
+let out11 = document.querySelector('.out-11')
 document.querySelector('.b-11').onclick = f11;
 
 
