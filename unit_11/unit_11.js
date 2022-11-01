@@ -232,12 +232,18 @@ document.querySelector('.b-13').onclick = f13;
 // Вывод в out-14
 
 let d14 = [];
-
+let one14
+let two
 function f14() {
 
+    one14 = i14.value
+    d14 = one14.split('')
+    console.log(d14)
+    //out14.innerHTML = 
     showArr('.out-14', d14);
 }
-
+let i14 = document.querySelector('.i-14')
+let out14 = document.querySelector('.out-14')
 document.querySelector('.b-14').onclick = f14;
 
 // Task 15
