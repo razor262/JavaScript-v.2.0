@@ -253,13 +253,28 @@ document.querySelector('.b-14').onclick = f14;
 // Вывод в out-15
 
 let d15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
-
+let input15
+let z = 0
+let korzinka15
 function f15() {
+    input15 = +i15.value
 
+    while (z < d15.length) {
+        console.log(d15[z])
+        if (d15[z] == input15) {
+            console.log('yes')
+            korzinka15 = 1
+        }
+        z++
+    }
+ 
+    if (korzinka15 == null) {
+        d15.push(input15)
+    }
 
     showArr('.out-15', d15);
 }
-
+let i15 = document.querySelector('.i-15')
 document.querySelector('.b-15').onclick = f15;
 
 // Task 16
@@ -274,6 +289,7 @@ let d162 = [23, 24, 56, 87];
 
 function f16() {
 
+    d16 = d161.concat(d162)
     showArr('.out-16', d16);
 }
 
@@ -290,7 +306,14 @@ let d171 = ['a', 'b', 'c', 'd'];
 let d172 = [1, 2, 3, 4, 5];
 
 function f17() {
-
+    
+    for (let i = 0; i < d171.length; i++) {
+       d17 += d171[i] + ' '
+    }
+    for (let k = 0; k < d171.length; k++) {
+        d17 += d172[k] + ' '
+     }
+    console.log(d17)
     showArr('.out-17', d17);
 }
 
@@ -304,11 +327,18 @@ document.querySelector('.b-17').onclick = f17;
 // Вывод в out-18
 
 let d18 = ['b', 'c', '45', 'e', 'z', 'y'];
-
+let input18
+let result18
 function f18() {
 
-}
+    input18 = i18.value
+    result18 = d18.includes(input18)
+    console.log(result18)
+    out18.innerHTML = result18
 
+}
+let out18 = document.querySelector('.out-18')
+let i18 = document.querySelector('.i-18')
 document.querySelector('.b-18').onclick = f18;
 
 
@@ -321,10 +351,30 @@ document.querySelector('.b-18').onclick = f18;
 let d19 = ['Your', 'payment', 'method', 'will', 'automatically', 'be', 'charged', 'in', 'advance', 'every'];
 let maxString = '';
 
+
+
 function f19() {
 
+    for (let i = 0; i < d19.length; i++) {
+        const element = d19[i];
+        let k
+        let sum19
+        //console.log(d19[i] + ' this_one')
+        for (let r = 0; r < element.length; r++) {
+            //const element = element[r];
+            
+            //k = r + 1
+            //console.log(k)
+            if (maxString < r + 1) {
+                sum19 = element[r]
+                
+            }
+        }
+        console.log(sum19)
+    }
+    
 }
-
+let out19 = document.querySelector('.out-19')
 document.querySelector('.b-19').onclick = f19;
 
 // Task 20
