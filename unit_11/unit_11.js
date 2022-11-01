@@ -349,29 +349,23 @@ document.querySelector('.b-18').onclick = f18;
 // Вывод в out-19
 
 let d19 = ['Your', 'payment', 'method', 'will', 'automatically', 'be', 'charged', 'in', 'advance', 'every'];
-let maxString = '';
-
+let maxString = d19[0]
+let one19
 
 
 function f19() {
 
     for (let i = 0; i < d19.length; i++) {
-        const element = d19[i];
-        let k
-        let sum19
-        //console.log(d19[i] + ' this_one')
-        for (let r = 0; r < element.length; r++) {
-            //const element = element[r];
-            
-            //k = r + 1
-            //console.log(k)
-            if (maxString < r + 1) {
-                sum19 = element[r]
-                
-            }
+                   
+        //console.log(d19[i].length)
+        
+        if (d19[i].length > maxString.length) {
+            maxString = d19[i]
+            console.log(maxString)
         }
-        console.log(sum19)
+       
     }
+    out19.innerHTML = maxString
     
 }
 let out19 = document.querySelector('.out-19')
@@ -384,9 +378,15 @@ document.querySelector('.b-19').onclick = f19;
 // Вывод в out-20
 
 let d20 = [4, 5, 6, 7, 8, 9, 10];
-
+let l20 = ''
 function f20() {
 
+    for (let i = 0; i < d20.length; i++) {
+        l20 += d20[i] + ' '
+               
+        console.log(l20)
+    }
+    out20.innerHTML = l20.join('')
 }
-
+let out20 = document.querySelector('.out-20')
 document.querySelector('.b-20').onclick = f20;
