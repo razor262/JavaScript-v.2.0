@@ -173,7 +173,7 @@ document.querySelector('.b-9').onclick = f9;
 // При нажатии b-10 выполняете функцию f10. Функция должна вывести в out-10 значения из массива a10, которые являются строкой. Используем цикл. Вывод - через пробел.
 
 function f10() {
-    let out = '';
+    //let out = '';
     let a10 = [
         [-2, '7', -3],
         [3, 4, -7],
@@ -186,9 +186,10 @@ function f10() {
         const element = a10[i];
         for (let k = 0; k < element.length; k++) {
             const array2 = element[k];
-            console.log(array2)
-            if (a10[i][k] == string) {
-                
+            //console.log(array2)
+            if (typeof a10[i][k] == "string") {
+                console.log(a10[i][k])
+                out10.innerHTML += a10[i][k] + ' '
             }
         }
         
