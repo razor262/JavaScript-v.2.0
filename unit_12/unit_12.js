@@ -18,9 +18,10 @@ document.querySelector('.b-1').onclick = f1;
 function f2() {
     let a2 = [[12, 'hi'], [45, 87], [55, 13]];
 
-    // return
+    console.log(a2[0][1])
+    out2.innerHTML = a2[0][1]
 }
-
+let out2 = document.querySelector('.out-2')
 document.querySelector('.b-2').onclick = f2;
 
 
@@ -31,9 +32,9 @@ document.querySelector('.b-2').onclick = f2;
 function f3() {
     let a3 = [[1, 2, 3], [3, 4, 5], [6, [7, 'my']]];
 
-    // return
+    out3.innerHTML = a3[2][1][1]
 }
-
+let out3 = document.querySelector('.out-3')
 document.querySelector('.b-3').onclick = f3;
 
 
