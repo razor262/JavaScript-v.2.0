@@ -181,8 +181,20 @@ function f10() {
         ['st', 21, -34, -43],
         [44, -56, 'task']
     ];
-}
 
+    for (let i = 0; i < a10.length; i++) {
+        const element = a10[i];
+        for (let k = 0; k < element.length; k++) {
+            const array2 = element[k];
+            console.log(array2)
+            if (a10[i][k] == string) {
+                
+            }
+        }
+        
+    }
+}
+let out10 = document.querySelector('.out-10')
 document.querySelector('.b-10').onclick = f10;
 
 
