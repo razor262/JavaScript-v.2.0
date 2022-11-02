@@ -45,9 +45,9 @@ document.querySelector('.b-3').onclick = f3;
 function f4() {
     let a4 = [[1, 2, 3], 'go', [3, 4, 5], [6, [7, 'my']]];
 
-    // return
+    out4.innerHTML = a4[1]
 }
-
+let out4 = document.querySelector('.out-4')
 document.querySelector('.b-4').onclick = f4;
 
 // Task 5
@@ -74,8 +74,19 @@ function f6() {
     let out = '';
     let a6 = [[1, 2], [3, 4], [5, 6], [21, 34], [44, 56]];
 
+    for (let i = 0; i < a6.length; i++) {
+        console.log(a6[i])
+        out = a6[i]
+        for (let k = 0; k < out.length; k++) {
+            console.log(out[k])
+            if (a6[i][k] % 2 != 0) {
+                console.log(a6[i][k] + ' не делится на 2')
+                out6.innerHTML += a6[i][k] + ' '
+            }
+        }
+    }
 }
-
+let out6 = document.querySelector('.out-6')
 document.querySelector('.b-6').onclick = f6;
 
 // Task 7
@@ -113,10 +124,21 @@ function f8() {
         [21, 34, 43],
         [44, 56]
     ];
-
+    for (let i = 0; i < a8.length; i++) {
+        const element = a8[i];
+        console.log(element)
+        for (let k = 0; k < element.length; k++) {
+            const array2 = element[k];
+            console.log(array2)
+            if (a8[i][k] % 2 != 0) {
+                console.log(a8[i][k] + ' вывод нечетного')
+                out8.innerHTML += a8[i][k] + ' '
+            }
+        }
+    }
 
 }
-
+let out8 = document.querySelector('.out-8')
 document.querySelector('.b-8').onclick = f8;
 
 // Task 9
@@ -131,10 +153,20 @@ function f9() {
         [21, -34, -43],
         [44, -56]
     ];
-
+    for (let i = 0; i < a9.length; i++) {
+        const element = a9[i];
+        console.log(element)
+        for (let k = 0; k < element.length; k++) {
+            const array2 = element[k];
+            console.log(array2)
+            if (a9[i][k] > 0) {
+                out9.innerHTML += a9[i][k] + ' '
+            }
+        }
+    }
 
 }
-
+let out9 = document.querySelector('.out-9')
 document.querySelector('.b-9').onclick = f9;
 
 // Task 10
