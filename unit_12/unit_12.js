@@ -210,8 +210,17 @@ let a11 = [
 
 function f11() {
     let out = '';
-}
 
+    for (let i = 0; i < a11.length; i++) {
+        const element = a11[i];
+        for (let k = element.length - 1; k >= 0; k--) {
+            const array2 = element[k];
+            console.log(element[k])
+            out11.innerHTML += array2 + ' '
+        }
+    }
+}
+let out11 = document.querySelector('.out-11')
 document.querySelector('.b-11').onclick = f11;
 
 // Task 12
@@ -228,19 +237,49 @@ function f12() {
         [0,1,0,1,0,1,0,1],
         [1,0,1,0,1,0,1,0],
     ];
+    for (let i = 0; i < a12.length; i++) {
+        const element = a12[i];
+        for (let k = 0; k < element.length; k++) {
+            const array2 = element[k];
+            if (a12[i][k] == 1) {
+                out12.innerHTML += a12[i][k] + ' '
+            }
+        }
+    }
 }
-
+let out12 = document.querySelector('.out-12')
 document.querySelector('.b-12').onclick = f12;
 
 // Task 13
 // При нажатии b-13 выполняете функцию f13. Функция должна присвоить переменной a13 массив эмулирующий шахматную доску. Причем массив должен создаваться с помощью циклов. Для проверки - выведите массив в консоль.
 
 let a13 = [];
+let w = 0
 
 function f13() {
+    console.log('work')
+    while (w < 8) {
+        let temp = []
 
+        let v = 0
+        while (v < 8) {
+            
+            if (v % 2 == 0) {
+                temp.push(1)
+            }else{
+                temp.push(0)
+            }
+            v++
+            a13.push(temp)
+            //console.log(temp)
+        }
+        w++
+        
+        out13.innerHTML += temp + '<br>'
+    }
+    
 }
-
+let out13 = document.querySelector('.out-13')
 document.querySelector('.b-13').onclick = f13;
 
 // Task 14
@@ -257,8 +296,20 @@ let a14 = [
 
 function f14() {
 
+    for (let i = 0; i < a14.length; i++) {
+        const element = a14[i];
+        let array2
+        
+        for (let k = 0; k < element.length; k++) {
+            array2 = k + 1;
+            if (typeof element === 'undefined') {
+                console.log('yes')
+            }
+        }
+        console.log(array2)
+    }
 }
-
+let out14 = document.querySelector('.out-14')
 document.querySelector('.b-14').onclick = f14;
 
 // Task 15
