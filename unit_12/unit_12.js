@@ -298,15 +298,14 @@ function f14() {
 
     for (let i = 0; i < a14.length; i++) {
         const element = a14[i];
-        let array2
+        let array2 = 0
         
         for (let k = 0; k < element.length; k++) {
             array2 = k + 1;
-            if (typeof element === 'undefined') {
-                console.log('yes')
-            }
+            
         }
         console.log(array2)
+        out14.innerHTML += array2 + ' '
     }
 }
 let out14 = document.querySelector('.out-14')
