@@ -91,19 +91,29 @@ document.querySelector('.b-4').onclick = () => {
 function f5(arr, block) {
     let out = '';
     // цикл
+    for (const key in arr) {
+        
+        block.innerHTML += `${key} : ${arr[key]} <br>`
+        
+    }
+    //block = out
+    //block = out
     // формат вывода `${key} : ${arr[key]} <br>`;
     //
     // тут вывод в блок block
+    
 }
 
 // давайте протестируем f5
 
 document.querySelector('.b-5').onclick = () => {
+    let duoParam = document.querySelector('.out-5')
     let a5 = {
         "one": 1,
         "two": 2
     }
-    f5(a5, '.out-5');
+    f5(a5, duoParam);
+    
 }
 
 
