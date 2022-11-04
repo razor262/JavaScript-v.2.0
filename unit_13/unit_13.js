@@ -96,8 +96,6 @@ function f5(arr, block) {
         block.innerHTML += `${key} : ${arr[key]} <br>`
         
     }
-    //block = out
-    //block = out
     // формат вывода `${key} : ${arr[key]} <br>`;
     //
     // тут вывод в блок block
@@ -119,6 +117,8 @@ document.querySelector('.b-5').onclick = () => {
 
 // Task 6
 // Добавьте input .i-61 и i-62. При нажатии b-6 выполняете функцию f6. Функция должна получать из i-61 ключ, а из i-62 значение и добавлять его в массив a6. После этого, с помощью функции f5 выводите массив a6 в out-6.
+let input61
+let input62
 
 let a6 = {
     "b": 17,
@@ -126,9 +126,20 @@ let a6 = {
 };
 
 function f6() {
+    input61 = i61.value
+    input62 = i62.value
+    console.log(input61)
+    console.log(input62)
+    a6.r = 77
 
+    for (let key in a6) {
+        const element = a6[key];
+        console.log( key + ' ' + a6[key])
+    }
 }
-
+let i61 = document.querySelector('.i-61')
+let i62 = document.querySelector('.i-62')
+let out6 = document.querySelector('.out-6')
 document.querySelector('.b-6').onclick = f6;
 
 // Task 7
