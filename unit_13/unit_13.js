@@ -9,7 +9,7 @@ function f1() {
         "five": 20
     };
     document.querySelector('.out-1').innerHTML = a1.two;
-    //return ...
+    console.log(a1.two) 
 }
 
 document.querySelector('.b-1').onclick = f1;
@@ -27,7 +27,7 @@ function f2() {
         "five": "hi"
     };
 
-    // return
+     return a2.five
 }
 
 document.querySelector('.b-2').onclick = () => {
