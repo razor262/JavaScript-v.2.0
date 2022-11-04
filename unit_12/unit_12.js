@@ -322,11 +322,24 @@ let a15 = [
     [3,4,5,6,7,8],
     [1,2]
 ];
-
+let sum15 = ''
 function f15() {
 
+    for (let i = 0; i < a15.length; i++) {
+        const element = a15[i];
+        console.log(a15[i])
+        for (let k = 0; k < element.length; k++) {
+            const array2 = element[k];
+            if (a15[i][k] > sum15) {
+                console.log(a15[i][k])
+                sum15 = a15[i][k] 
+                //out15.innerHTML = a15[i][k]
+            }
+        }
+    }
+    out15.innerHTML = sum15
 }
-
+let out15 = document.querySelector('.out-15')
 document.querySelector('.b-15').onclick = f15;
 
 // Task 16
