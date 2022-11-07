@@ -130,11 +130,16 @@ function f6() {
     input62 = i62.value
     console.log(input61)
     console.log(input62)
-    a6.r = 77
+
+    a6[a6.length - 1] = input61
+    a6[0] = input62
+    a6.keys(obj)
 
     for (let key in a6) {
         const element = a6[key];
-        console.log( key + ' ' + a6[key])
+        //console.log( key + ' ' + a6[key])
+        //console.log(key.length - 1)
+        out6.innerHTML += key + ' ' + a6[key] + ' '
     }
 }
 let i61 = document.querySelector('.i-61')
