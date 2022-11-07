@@ -278,10 +278,24 @@ let a11 = {
     "k": 22,
     "d": 54
 };
-
+let input111
+let sum11 = ''
 function f11() {
-}
+    input111 = i11.value
 
+    for (const key in a11) {
+        if (key == input111) {
+            //console.log(key + ' ' + a11[key])
+            delete a11[key] + key
+            
+        }
+        console.log(key + ' ' + a11[key])
+        sum11 += key + ' ' + a11[key] + '<br>'
+    }
+    out11.innerHTML = sum11
+}
+let i11 = document.querySelector('.i-11')
+let out11 = document.querySelector('.out-11')
 document.querySelector('.b-11').onclick = f11;
 
 // Task 12
