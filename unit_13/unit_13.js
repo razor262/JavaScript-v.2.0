@@ -209,11 +209,32 @@ let a9 = {
     "k": 22,
     "d": 54
 };
+let input9
+let sum9 = ''
+let invate9
+let i99 = 0
 
 function f9() {
+    input9 = i9.value
+    console.log(input9.split(''))
+    invate9 = input9.split('')
+    while (i99 < invate9.length) {
+        console.log(invate9[i99])
+        for (const key in a9) {
 
+            if (invate9[i99] == key) {
+                sum9 += key + ' '
+                console.log(sum9)
+            }
+    
+        }
+        i99++
+    }
+
+    out9.innerHTML = sum9 || 'пустая строка'
 }
-
+let i9 = document.querySelector('.i-9')
+let out9 = document.querySelector('.out-9')
 document.querySelector('.b-9').onclick = f9;
 
 // Task 10
