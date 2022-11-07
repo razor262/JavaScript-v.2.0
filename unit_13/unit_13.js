@@ -184,7 +184,8 @@ let a8 = {
 function f8() {
 
 }
-
+let i8 = document.querySelector('.i-8')
+let out8 = document.querySelector('.out-8')
 document.querySelector('.b-8').onclick = f8;
 
 // Task 9
