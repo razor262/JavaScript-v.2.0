@@ -180,9 +180,20 @@ let a8 = {
     "b": 17,
     "e": 22
 };
+let input8
+let sum8 = ''
 
 function f8() {
-
+    input8 = +i8.value
+    console.log(input8)
+    for (const key in a8) {
+        console.log(a8[key])
+        if (a8[key] == input8) {
+            sum8 = a8[key];
+            
+        }
+    }
+    out8.innerHTML = sum8 || 0
 }
 let i8 = document.querySelector('.i-8')
 let out8 = document.querySelector('.out-8')
