@@ -239,9 +239,21 @@ document.querySelector('.b-9').onclick = f9;
 
 // Task 10
 // Давайте напишем полезную функцию f10, которая проверяет есть ли значение в ассоциативном массиве. Фукнция должна возвращать true если есть, и false если нет. Массив и значение передавать функции в качестве параметров.
+let sum10 = ''
 
 function f10(arr, val) {
 
+    console.log(arr)
+    console.log(val)
+    for (const key in arr) {
+        if (arr[key] == val) {
+            //sum10 += val + ' ';
+            //console.log(sum10)
+            return true;
+        } else {
+            return false
+        }
+    }
     //return true;
     //return false;
 }
