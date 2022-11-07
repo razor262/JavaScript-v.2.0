@@ -133,11 +133,11 @@ function f6() {
 
     a6[a6.length - 1] = input61
     a6[0] = input62
-    a6.keys(obj)
+    
 
     for (let key in a6) {
         const element = a6[key];
-        //console.log( key + ' ' + a6[key])
+        console.log( key + ' ' + a6[key])
         //console.log(key.length - 1)
         out6.innerHTML += key + ' ' + a6[key] + ' '
     }
@@ -154,12 +154,23 @@ let a7 = {
     "b": 17,
     "e": 22
 };
-
+let input7
+let sum7
 
 function f7() {
 
+    input7 = i7.value
+    console.log(input7)
+    for (const key in a7) {
+        if (key == input7) {
+            
+            sum7 = 1
+        }
+    }
+    out7.innerHTML = sum7 || 0
 }
-
+let i7 = document.querySelector('.i-7')
+let out7 = document.querySelector('.out-7')
 document.querySelector('.b-7').onclick = f7;
 
 // Task 8
