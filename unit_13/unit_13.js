@@ -308,11 +308,24 @@ let a12 = {
     "k": 22,
     "d": 17,
 };
+let input12 
 
 function f12() {
-
+    input12 = i12.value
+    console.log(input12)
+    for (const key in a12) {
+        if (a12[key] == input12) {
+            delete a12[key]
+            console.log(key)
+            
+        }
+        out12.innerHTML += key + ' ' + a12[key] + ' '
+    }
+    console.log(a12)
+    
 }
-
+let i12 = document.querySelector('.i-12')
+let out12 = document.querySelector('.out-12')
 document.querySelector('.b-12').onclick = f12;
 
 // Task 13
