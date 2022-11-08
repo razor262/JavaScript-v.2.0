@@ -364,11 +364,20 @@ let a14 = {
     'testt': [6, 7, 8],
     'ivan': [9, 10]
 };
+let element14
 
 function f14() {
 
-}
+    for (const key in a14) {
+        console.log(a14[key])
+        let curentTime = a14[key]
+        console.log(curentTime[0])
 
+        out14.innerHTML += curentTime[0] + ' '
+    }
+    
+}
+let out14 = document.querySelector('.out-14')
 document.querySelector('.b-14').onclick = f14;
 
 // Task 15
