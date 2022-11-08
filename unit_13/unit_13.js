@@ -337,11 +337,21 @@ let a13 = {
     'testt': 'vodoley',
     'ivan': 6
 };
+let sum13 = 0
 
 function f13() {
 
+    for (const key in a13) {
+        //console.log(a13[key])
+        if (typeof a13[key] == 'number') {
+            console.log(a13[key])
+            sum13 += a13[key]
+        }
+    }
+    console.log(sum13)
+    out13.innerHTML = sum13
 }
-
+let out13 = document.querySelector('.out-13')
 document.querySelector('.b-13').onclick = f13;
 
 // Task 14
