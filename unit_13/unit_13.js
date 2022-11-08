@@ -394,8 +394,17 @@ let a15 = {
 
 function f15() {
 
+    for (const key in a15) {
+        console.log(a15[key])
+        let element15 = a15[key]
+        for (let i = 0; i < element15.length; i++) {
+            const element = element15[i];
+            console.log(element)
+            out15.innerHTML += element + ' '
+        }
+    }
 }
-
+let out15 = document.querySelector('.out-15')
 document.querySelector('.b-15').onclick = f15;
 
 // Task 16
