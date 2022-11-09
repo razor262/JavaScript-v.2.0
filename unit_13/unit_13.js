@@ -436,11 +436,6 @@ function f16() {
         }
         out16.innerHTML += sum16 + ' '
         console.log(sum16)
-        /*
-        if (Object.hasOwnProperty.call(object, key)) {
-            const element = object[key];
-            
-        }*/
     }
     
 }
@@ -468,8 +463,17 @@ let a17 = {
 
 function f17() {
 
+    for (const key in a17) {
+        console.log(a17[key])
+        let element17 = a17[key]
+        for (const item in element17) {
+             
+        }
+        out17.innerHTML += element17.name + ' '
+        console.log(element17.name)
+    }
 }
-
+let out17 = document.querySelector('.out-17')
 document.querySelector('.b-17').onclick = f17;
 
 // Task 18
