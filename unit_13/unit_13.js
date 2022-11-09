@@ -424,11 +424,27 @@ let a16 = {
         "age": 47,
     },
 }
-
+let sum16
 function f16() {
 
+    for (const key in a16) {
+        //console.log(a16[key])
+        let element = a16[key]
+        for (const key in element) {
+            sum16 = element.name
+            
+        }
+        out16.innerHTML += sum16 + ' '
+        console.log(sum16)
+        /*
+        if (Object.hasOwnProperty.call(object, key)) {
+            const element = object[key];
+            
+        }*/
+    }
+    
 }
-
+let out16 = document.querySelector('.out-16')
 document.querySelector('.b-16').onclick = f16;
 
 
