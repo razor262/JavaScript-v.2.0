@@ -484,11 +484,24 @@ let a18 = {
     "blue": ['Minska', 'Obolon', 'Pochaina', 'Holosiivska'],
     "green": ['Syrets', 'Zoloti Vorota', 'Klovska', 'Vidubichi']
 }
-
+let data18
 function f18() {
+    data18 = input18.value
+    console.log(data18)
+    for (const key in a18) {
+        let k18 = 0
+        console.log(a18[key])
+        const element18 = a18[key]
+        while (k18 < element18.length) {
+            console.log(element18[k18])
 
+            k18++
+        }
+    }
     console.log('yes')
 }
+let input18 = document.querySelector('.i-18')
+let out18 = document.querySelector('.out-18')
 let action18 = document.querySelector('.b-18')
 action18.addEventListener('click', f18)
 // Task 19
