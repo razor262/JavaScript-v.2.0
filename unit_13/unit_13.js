@@ -485,16 +485,22 @@ let a18 = {
     "green": ['Syrets', 'Zoloti Vorota', 'Klovska', 'Vidubichi']
 }
 let data18
+
 function f18() {
     data18 = input18.value
     console.log(data18)
     for (const key in a18) {
         let k18 = 0
+        let sum18 = ''
         console.log(a18[key])
         const element18 = a18[key]
         while (k18 < element18.length) {
-            console.log(element18[k18])
-
+           
+            sum18 += element18[k18] + ' '
+            if (element18[k18] == data18) {
+                console.log(element18[k18])
+                out18.innerHTML += sum18 + ' '
+            }
             k18++
         }
     }
