@@ -495,12 +495,12 @@ function f18() {
         console.log(a18[key])
         const element18 = a18[key]
         while (k18 < element18.length) {
-           
-            sum18 += element18[k18] + ' '
+            console.log(element18[k18])
             if (element18[k18] == data18) {
                 console.log(element18[k18])
-                out18.innerHTML += sum18 + ' '
+                out18.innerHTML += sum18
             }
+            sum18 += element18[k18] + ' '
             k18++
         }
     }
