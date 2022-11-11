@@ -519,11 +519,28 @@ let a19 = {
     "blue": ['Minska', 'Obolon', 'Pochaina', 'Holosiivska'],
     "green": ['Syrets', 'Zoloti Vorota', 'Klovska', 'Vidubichi']
 }
-
+let input19
+let color19
 function f19() {
-
+    input19 = i19.value
+    for (const key in a19) {
+        console.log(a19[key])
+        console.log(key)
+        color19 = key
+        let element19 = a19[key]
+        for (const item in element19) {
+            console.log(element19[item])
+            
+            if (element19[item] == input19) {
+                console.log(element19[item])
+                console.log(item)
+                out19.innerHTML = color19
+            }
+        }
+    }
 }
-
+let i19 = document.querySelector('.i-19')
+let out19 = document.querySelector('.out-19')
 document.querySelector('.b-19').onclick = f19;
 
 // Task 20
@@ -534,9 +551,32 @@ let a20 = {
     "blue": [['Minska', 1], ['Obolon', 0], ['Pochaina', 2], ['Holosiivska', 0]],
     "green": [['Syrets', 1], ['Zoloti Vorota', 2], ['Klovska', 0], ['Vidubichi', 1]],
 }
-
+let sum20 = ''
+let tventy20 = ''
 function f20() {
 
+    for (const key in a20) {
+        console.log(a20[key])
+        let element20 = a20[key]
+        for (const item in element20) {
+            console.log(element20[item])
+            tventy20 = element20[item]
+            for (const k in tventy20) {
+                
+                if (tventy20[1] == 2) {
+                    console.log(tventy20[0])
+                    //const element = tventy20[k];
+                    //console.log(element)
+                    sum20 += tventy20[0] + ' '
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+    out20.innerHTML = sum20
 }
-
+let out20 = document.querySelector('.out-20')
 document.querySelector('.b-20').onclick = f20
