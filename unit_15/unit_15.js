@@ -52,18 +52,32 @@ let i3 = document.querySelector('.i-3')
 // При нажатии b-4 выполняете функцию f4. Функция должна проверить наличие в наборе s4 строки введенной пользователем в i-4. Если строка есть - то вывести в out-4 true. Если нет - false.
 
 let s4 = new Set(['a', 'b', 'c', 'z']);
-
-const f4 = () => { }
+let input4
+let sum4 = ''
+const f4 = () => {
+    input4 = i4.value
+    console.log(input4)
+    for (const key of s4) {
+        console.log(key)
+        if (key == input4) {
+            sum4 = 'true'
+        }
+    }
+    out4.innerHTML = sum4 || 'false'
+ }
 
 document.querySelector('.b-4').onclick = f4;
-
+let i4 = document.querySelector('.i-4')
+let out4 = document.querySelector('.out-4')
 // Task 5
 //  При нажатии b-5 выполняете функцию f5. Функция должна вывести в out-5 количество элементов в наборе s5.
 
 
 let s5 = new Set(['a', 'b', 'c', 'z', 'a2', 'b2', 'c2', 'z2']);
 
-const f5 = () => { }
+const f5 = () => {
+
+ }
 
 document.querySelector('.b-5').onclick = f5;
 
