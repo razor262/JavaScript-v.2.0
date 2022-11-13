@@ -31,11 +31,22 @@ let i2 = document.querySelector('.i-2')
 // При нажатии b-3 выполняете функцию f3. Функция должна удалить из набора s3 строку, которую пользователь вводит в i-3. Функция должна выводить в консоль s3 после каждого удаления элемента.
 
 let s3 = new Set(['one', 'two', 'four']); // обратите внимание, как просто можно добавить массив в набор!
-
-const f3 = () => { }
+let input3
+const f3 = () => {
+    input3 = i3.value
+    console.log(input3)
+    for (const item of s3) {
+        console.log(item)
+        if (item == input3) {
+            console.log(item + ' найдено')
+            s3.delete(item)
+        }
+    }
+    console.log(s3)
+}
 
 document.querySelector('.b-3').onclick = f3;
-
+let i3 = document.querySelector('.i-3')
 
 // Task 4
 // При нажатии b-4 выполняете функцию f4. Функция должна проверить наличие в наборе s4 строки введенной пользователем в i-4. Если строка есть - то вывести в out-4 true. Если нет - false.
