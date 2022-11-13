@@ -4,3 +4,15 @@ html, body {
 body {
     margin: 20px;
 }
+.container {
+    text-align: center;
+    width: 15%;
+    background-color: aquamarine;
+    border-radius: 15px;
+    padding: 15px;
+}
+.button-primary {
+    width: 180px;
+    border-radius: 7px;
+    background-color: aqua;
+}
