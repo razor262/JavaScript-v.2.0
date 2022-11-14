@@ -77,10 +77,14 @@ let s5 = new Set(['a', 'b', 'c', 'z', 'a2', 'b2', 'c2', 'z2']);
 
 const f5 = () => {
 
+    for (const key of s5) {
+        console.log(key)
+        console.log(s5)
+    }
  }
 
 document.querySelector('.b-5').onclick = f5;
-
+let out5 = document.querySelector('.out-5')
 // Task 6
 // При нажатии b-6 выполняете функцию f6. Функция должна вывести в out-6 число уникальных элементов в массиве a6. Решение должно использовать set.
 
