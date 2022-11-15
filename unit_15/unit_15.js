@@ -90,7 +90,7 @@ const f6 = () => {
     let one = new Set(a6)
     console.log(one)
     for (const item of one) {
-        console.log(item)
+        //console.log(item)
         console.log(k6 += 1)
     }
     out6.innerHTML = k6
@@ -100,11 +100,29 @@ document.querySelector('.b-6').onclick = f6;
 
 // Task 7
 // При нажатии b-7 выполняете функцию f7. Функция должна получать из i-7 значение пароля и проверять, чтобы пользователь в строке пароля использовал не повторяющиеся символы. Если символы уникальны, а длина пароля больше ( строго) 6 то выводите в out-7 число 1. Если есть повторяющиеся символы, или длина меньше или равна 6 - то выводите 0. Для проверки уникальности символов используйте Set.
-
-const f7 = () => { }
+let input7
+let sum7 = 0
+const f7 = () => {
+    input7 = i7.value
+    let one7 = new Set(input7)
+    console.log(one7)
+    for (const item of one7) {
+        console.log(item)
+        sum7 += 1
+    }
+    console.log(sum7)
+    if (sum7 >= 6) {
+        console.log('больше шести')
+        out7.innerHTML = 1
+    } else {
+        console.log('меньше шести')
+        out7.innerHTML = 0
+    }
+ }
 
 document.querySelector('.b-7').onclick = f7;
-
+let i7 = document.querySelector('.i-7')
+let out7 = document.querySelector('.out-7')
 // Task 8
 // При нажатии b-8 выполняете функцию f8. Функция должна перебрать набор s8 и добавить в массив ar8 только числа больше 5. Выведите массив в консоль.
 
