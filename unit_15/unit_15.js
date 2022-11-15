@@ -188,6 +188,7 @@ const f11 = () => {
     s.add([1]);
     s.add([1]);
     console.log(s);
+    
 }
 
 document.querySelector('.b-11').onclick = f11;
@@ -196,9 +197,19 @@ document.querySelector('.b-11').onclick = f11;
 //   При нажатии b-12 выполняете функцию f12. Функция должна преобразовать строку str12 в массив, так, что каждая буква - отдельный элемент массива. Потом создать набор на основе массива и возвратить его.
 
 let str12 = 'The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy firesides but also of orphaned and starving children';
-
+let i = 0
+let array12 = []
+let sum12 = ''
 const f12 = () => {
-
+    while (i < str12.length) {
+        console.log(str12[i])
+        array12.push(str12[i])
+        i++
+    }
+    console.log(array12)
+    let one12 = new Set()
+    one12.add(array12)
+    return one12
 }
 
 document.querySelector('.b-12').onclick = () => {
