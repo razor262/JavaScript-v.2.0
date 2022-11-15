@@ -161,10 +161,19 @@ document.querySelector('.b-9').onclick = () => {
 
 // Task 10
 // При нажатии b-10 выполняете функцию f10. Функция должна принимать набор set в качестве параметра и выводить его в указанный элемент. Элемент указывается как второй параметр функции f10. Вывод значений - через пробел.
-
-const f10 = (out_set, elem) => { }
-
+let sum10 = ''
+const f10 = (out_set, elem) => { 
+    console.log(out_set)
+    console.log(elem)
+    for (const key of out_set) {
+        console.log(key)
+        sum10 += key + ' '
+    }
+    out10.innerHTML = sum10
+}
+let out10 = document.querySelector('.out-10')
 document.querySelector('.b-10').onclick = () => {
+    
     let a10 = new Set(['4', '5', '6']);
     f10(a10, '.out-10');
 };
