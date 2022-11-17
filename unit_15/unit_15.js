@@ -224,33 +224,44 @@ document.querySelector('.b-12').onclick = () => {
 let str13 = 'The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy firesides but also of orphaned and starving children';
 let result13 = ''
 const f13 = () => {
+
+
     let array13 = Array.from(str13)
     let set13 = new Set(array13)
     let one13 = Array.from(set13)
     console.log(typeof array13)
-    console.log(typeof set13) 
+    console.log(typeof set13)
     console.log(typeof one13)
 
-    for (const item of set13) {
-        console.log(item)
-        let sum13 = 1
+    let obj = array13.reduce((acc, el) => {
 
-            for (let i = 0; i < array13.length; i++) {
-                //const element = array13[i];
-                //console.log(element)
+        acc[el] = (acc[el] || 0) + 1;
+        return acc;
 
-                if (item == array13[i]) {
-                    sum13 += 1
-                    console.log( array13[i] + ' : ' + sum13)
-                    result13 += array13[i] + ' : ' + sum13 + ' '
+        /*
+        for (const item of set13) {
+            console.log(item)
+            let sum13 = 1
+    
+                for (let i = 0; i < array13.length; i++) {
+                    //const element = array13[i];
+                    //console.log(element)
+    
+                    if (item == array13[i]) {
+                        sum13 += 1
+                        console.log( array13[i] + ' : ' + sum13)
+                        result13 += array13[i] + ' : ' + sum13 + ' '
+                    }
                 }
-            }
-            
-    }
-        console.log(result13)
-    // return
-}
+                
+        }
+            console.log(result13)*/
+        // return
+    }, {})
 
+    console.log(obj)
+}
 document.querySelector('.b-13').onclick = () => {
     console.log(f13());
+
 }
