@@ -89,8 +89,16 @@ let a6 = [[1,2], [3,4], [5,6]];
 
 function f6() {
 
+    for (let i = 0; i < a6.length; i++) {
+        const element = a6[i];
+        for (let k = 0; k < element.length; k++) {
+            element[k];
+            console.log(a6[i][k])
+            out6.innerHTML += a6[i][k] + ' '
+        }
+    }
 }
-
+let out6 = document.querySelector('.out-6')
 document.querySelector('.b-6').addEventListener('click', f6);
 
 // Task 7
