@@ -20,17 +20,27 @@ let a2 = [5,7,9, 11, 13, 15];
 
 function f2() {
 
+    for (let i = 0; i < a2.length; i++) {
+        out2.innerHTML += i + ' ' + a2[i] + ' '
+        
+    }
 }
-
+let out2 = document.querySelector('.out-2')
 document.querySelector('.b-2').addEventListener('click', f2);
 
 // Task 3
 //При нажатии .b-3 выполняете функцию f3. Функция получает div.out-3 со страницы с помощью getElementsByClassName и в каждый записывает число 3, перезаписывая содержимое div.
 
 function f3() {
-
+    console.log(out3.length)
+    
+    for (let i = 0; i < out3.length; i++) {
+        //console.log(out3[i])
+        out3[i].textContent = 3
+        
+    }
 }
-
+let out3 = document.getElementsByClassName('out-3')
 document.querySelector('.b-3').addEventListener('click', f3);
 
 
@@ -38,18 +48,34 @@ document.querySelector('.b-3').addEventListener('click', f3);
 //При нажатии .b-4 выполняете функцию f4. Функция получает div.out-4 со страницы с помощью querySelectorAll и в каждый дописывает число 4.
 
 function f4() {
-
+    console.log(typeof out4)
+    
+    for (let i = 0; i < out4.length; i++) {
+       console.log(out4[i])
+       out4[i].innerHTML += 4
+        
+    }
+    //console.log(out4)
 }
-
+let out4 = document.querySelectorAll('.out-4')
 document.querySelector('.b-4').addEventListener('click', f4);
 
 // Task 5
 //При нажатии .b-5 выполняете функцию f5. Функция должна с помощью for of перебрать массив a5 и возвратить новый массив куда входят элементы из a5 большие 7.
 
 let a5 = [3,4,5,2,1,7,8,2,4,6,8,11,23,17];
-
+let w5 = []
 function f5() {
 
+    for (const item of a5) {
+        if (item > 7) {
+            console.log(item)
+            w5.push(item)
+        }
+        
+    }
+    console.log(w5)
+    return w5
 }
 
 document.querySelector('.b-5').addEventListener('click', ()=> {
