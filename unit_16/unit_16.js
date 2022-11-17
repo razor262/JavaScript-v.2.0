@@ -5,8 +5,12 @@ let a1 = [5,7,9, 11, 13, 15];
 
 function f1() {
 
+    for (let i = 0; i < a1.length; i++) {
+        out1.innerHTML += a1[i] + ' '
+        
+    }
 }
-
+let out1 = document.querySelector('.out-1')
 document.querySelector('.b-1').addEventListener('click', f1);
 
 // Task 2
