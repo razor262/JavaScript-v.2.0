@@ -154,8 +154,24 @@ let a9 = [ [4,3,2], [2,5], [0,0,0,0,0]];
 
 function f9() {
 
+    for (let i = 0; i < a9.length; i++) {
+        const element = a9[i];
+        console.log(element)
+        let curent9 = 0
+        for (let k = 0; k < element.length; k++) {
+            const sum9 = element[k];
+            console.log(sum9)
+            //console.log(k)
+            curent9 += 1
+            
+        }
+        console.log(curent9)
+        //out9.innerHTML = curent9
+        return curent9 + 1
+    }
+   
 }
-
+let out9 = document.querySelector('.out-9')
 document.querySelector('.b-9').addEventListener('click', ()=>{
     document.querySelector('.out-9').innerHTML = f9();
 });
