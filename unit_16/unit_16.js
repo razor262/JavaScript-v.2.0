@@ -179,13 +179,15 @@ document.querySelector('.b-9').addEventListener('click', ()=>{
 // Task 10
 //При нажатии .b-10 выполняете функцию f10. Функция должна преобразовывать массив a10 в ассоциативный массив вида {4: 4, 6: 6, 9: 9, hello : "hello"} и возвращать полученный массив.
 
+
 let a10 = [4, 6, 9, 'Hello'];
-let z10 = []
+let z11 = { 4: 1, 5: 2, 6: 0 }
+let z10 = new Object()
 function f10() {
 
-    for (const item in a10) {
+    for (const item of a10) {
         console.log(a10[item])
-        z10 += a10[item] + ' ' + a10[item] + ' '
+        z10[item] = item
     }
     console.log(z10)
 }
