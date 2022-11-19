@@ -180,9 +180,14 @@ document.querySelector('.b-9').addEventListener('click', ()=>{
 //При нажатии .b-10 выполняете функцию f10. Функция должна преобразовывать массив a10 в ассоциативный массив вида {4: 4, 6: 6, 9: 9, hello : "hello"} и возвращать полученный массив.
 
 let a10 = [4, 6, 9, 'Hello'];
-
+let z10 = []
 function f10() {
 
+    for (const item in a10) {
+        console.log(a10[item])
+        z10 += a10[item] + ' ' + a10[item] + ' '
+    }
+    console.log(z10)
 }
 
 document.querySelector('.b-10').addEventListener('click', () => {
@@ -201,8 +206,16 @@ let a11 = {
 
 function f11() {
 
+    for (const key in a11) {
+        console.log(a11[key])
+        
+        if (a11[key] > 10) {
+            out11.innerHTML += a11[key] + ' '
+            
+        }
+    }
 }
-
+let out11 = document.querySelector('.out-11')
 document.querySelector('.b-11').addEventListener('click', f11);
 
 // Task 12
