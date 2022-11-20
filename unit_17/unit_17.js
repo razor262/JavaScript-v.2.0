@@ -34,6 +34,10 @@ let a2 = [2,3,4,5,10,11,12];
 
 function t2() {
 
+    new_array = a2.map(function(item, index) {
+        return item ** 2
+    })
+    return new_array
 }
 
 document.querySelector('.b-2').onclick = () => {
