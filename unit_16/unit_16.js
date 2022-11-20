@@ -274,6 +274,10 @@ document.querySelector('.b-14').addEventListener('click', f14);
 
 function f15() {
 
+    for (const item of out15) {
+        console.log(item)
+        item.innerHTML = 15
+    }
 }
-
+let out15 = document.querySelectorAll('.out-15')
 document.querySelector('.b-15').addEventListener('click', f15);
