@@ -260,8 +260,12 @@ let a14 = new Set([4,5,6]);
 
 function f14() {
 
+    for (const item of a14) {
+        console.log(item)
+        out14.innerHTML += item + ' '
+    }
 }
-
+let out14 = document.querySelector('.out-14')
 document.querySelector('.b-14').addEventListener('click', f14);
 
 // Task 15
