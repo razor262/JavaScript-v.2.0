@@ -227,8 +227,12 @@ let a12 = [4,5,6,7];
 
 function f12() {
 
+    for (const item of a12) {
+        console.log(item)
+        out12.innerHTML += item + ' '
+    }
 }
-
+let out12 = document.querySelector('.out-12')
 document.querySelector('.b-12').addEventListener('click', f12);
 
 
