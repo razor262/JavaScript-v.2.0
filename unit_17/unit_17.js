@@ -50,9 +50,19 @@ document.querySelector('.b-2').onclick = () => {
 Действия должны запускаться при вызове функции t3. */
 
 let a3 = [4,"3",6,7,"12",34,"56",78,90,11];
-
+let sum3 = []
 function t3() {
+    
+    array = a3.map(function(item, index) {
+        //console.log(item)
+        //return item
+        if (typeof item == 'number') {
+            console.log(item)
+            sum3.push(item)
+        }
+    })
 
+    return sum3
 }
 
 document.querySelector('.b-3').onclick = () => {
