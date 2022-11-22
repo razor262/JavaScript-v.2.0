@@ -74,9 +74,19 @@ document.querySelector('.b-3').onclick = () => {
 /*  Следующая задача проще будет решаться через метод forEach, который мы изучим во второй части урока! Сейчас мы делаем костыль, для отработки навыков работы с map. Дан массив a4 = [4,"3",6,7,"12",34,"56",78,90,11] - с помощью map переберите массив и создайте массив a4_res куда добавьте ТОЛЬКО числа из массива a4. Возвратите a4_res. Действия должны запускаться при вызове функции t4. */
 
 let a4 = [4,"3",6,7,"12",34,"56",78,90,11];
-
+let sum4 = []
 function t4() {
 
+    array = a4.map(function(item, index) {
+        console.log(item)
+        //return item
+        if (typeof item == 'number') {
+            console.log(item)
+            sum4.push(item)
+        }
+    })
+
+    return sum4
 }
 
 document.querySelector('.b-4').onclick = () => {
