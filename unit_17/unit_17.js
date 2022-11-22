@@ -120,6 +120,9 @@ let b6 = [3, 14, 15, 92, "6", "5", "hello", 32];
 
 function t6() {
 
+    const result = b6.filter(b6 => b6.length > 3)
+
+    console.log(result)
 }
 
 document.querySelector('.b-6').onclick = () => {
