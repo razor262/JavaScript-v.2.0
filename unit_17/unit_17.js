@@ -81,7 +81,7 @@ function t4() {
         console.log(item)
         //return item
         if (typeof item == 'number') {
-            console.log(item)
+            //console.log(item)
             sum4.push(item)
         }
     })
@@ -102,6 +102,9 @@ let b1 = [3, 14, 15, 92];
 
 function t5() {
 
+    const result = b1.filter(b1 => b1 % 2 == 0)
+
+    console.log(result)
 }
 
 document.querySelector('.b-5').onclick = () => {
