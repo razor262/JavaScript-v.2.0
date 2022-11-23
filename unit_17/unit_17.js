@@ -203,7 +203,19 @@ let b10 = [ [1,2,3], [3,4,6], [4,5,7], [8,9,3]]
 
 function t10() {
 
-
+    const b10_res = b10.filter( (b10, index, arr) => {
+        console.log(b10)
+        console.log(index)
+        //console.log(arr)
+        
+        for (let i = 0; i < b10.length; i++) {
+            console.log(b10[i]);
+            if (b10[i] == 3) {
+                console.log(b10[i])
+            }
+        }
+    })
+    
 }
 
 document.querySelector('.b-10').onclick = () => {
