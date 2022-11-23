@@ -176,7 +176,17 @@ document.querySelector('.b-8').onclick = () => {
 let b9 = [3, "hello", 4, "world", 5, "hi"];
 
 function t9() {
-
+    const b9_res = b9.filter((b9, index, arr) => {
+        //console.log(b9)
+        //console.log(index)
+        //console.log(arr)
+        if (typeof b9 == 'number') {
+            b9_num += b9 + ' '
+        }
+        if (typeof b9 == 'string') {
+            b9_string += b9 + ' '
+        }
+    })
     return [b9_num, b9_string];
 }
 
