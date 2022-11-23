@@ -150,9 +150,18 @@ document.querySelector('.b-7').onclick = () => {
 /* Дан массив b8 = [3, 14, 15, 92, "6", "5", "hello", 32]. С помощью filter, переберите массив b8 и создайте массив b8_res, который содержит индексы четных элементов. Возвратите b8_res. Действия должны запускаться при вызове функции t8 */
 
 let b8 = [3, 14, 15, 92, "6", "5", "hello", 32];
-
+let array8 = []
 function t8() {
 
+    const b8_res = b8.filter( (b8, index, arr) => {
+        //console.log(index)
+        if (b8 % 2 == 0) {
+            console.log(index)
+            array8 += index + ' '
+        }
+        //array8 += index + ' '
+    })
+    return array8
 }
 
 document.querySelector('.b-8').onclick = () => {
