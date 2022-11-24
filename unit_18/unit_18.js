@@ -21,7 +21,7 @@ a2_res = []
 function t2() {
     let a2 = [2,3,4,5,10,11,12]
     a2.forEach(elem => {
-        a2_res.push(elem % 2)
+        a2_res.push(elem / 2 + ' ')
     })
     document.querySelector('.out-2').innerHTML = a2_res
 }
