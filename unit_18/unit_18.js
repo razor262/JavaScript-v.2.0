@@ -31,9 +31,19 @@ document.querySelector('.b-2').onclick = t2;
 
 // Task 3 ============================================
 /*  Дан массив a3 = [2, 'hello', 3, 'hi', 4, 'Mazai'] - с помощью forEach переберите массив и создайте новый массив a3_res куда добавьте элементы данного массива являющиеся числом. Запускаться решение должно при вызове функции t3.*/
-
+let sum3 = []
 function t3() {
+    let a3 = [2, 'hello', 3, 'hi', 4, 'Mazai']
 
+    a3.forEach(function callback(currentValue, index, array) {
+        //your iterator
+        //console.log(currentValue)
+        if (typeof currentValue == 'number') {
+            console.log(currentValue)
+            sum3.push(currentValue)
+        }
+    });
+    console.log(sum3)
 }
 
 document.querySelector('.b-3').onclick = t3;
