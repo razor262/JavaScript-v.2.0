@@ -207,13 +207,22 @@ function t10() {
         console.log(b10)
         console.log(index)
         //console.log(arr)
-        
+        let curentCount = 0
         for (let i = 0; i < b10.length; i++) {
             console.log(b10[i]);
             if (b10[i] == 3) {
                 console.log(b10[i])
-            }
+                curentCount = b10[i]
+                index = true
+            } 
         }
+        console.log(curentCount)
+        if (index == true) {
+            console.log('work')
+            console.log(b10) // возвращает массив с цифрой 3
+            //return b10
+        }
+        
     })
     
 }
