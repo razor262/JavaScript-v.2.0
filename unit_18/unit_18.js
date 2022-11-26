@@ -156,10 +156,16 @@ document.querySelector('.b-9').onclick = t9;
 
 // Task 10 ============================================
 /*  Дан массив a10 = {name: ivan, age: 15, sex: 1, id: 45} - преобразуйте его в query строку ( так передаются GET параметры). Найдите описание что такое query строка самостоятельно. Разделитель - амперсанд. Результат присвойте a10_res. Запускаться решение должно при вызове функции t10. Допускается лишний амперсанд в конце строки!!! */
-
+let sum10 = []
 function t10() {
     let a10 = {name: 'ivan', age: 15, sex: 1, id: 45}
     console.log(a10)
+    for (const key in a10) {
+        const element = key + '=' + a10[key];
+        console.log(element)
+        sum10.push(element)
+    }
+    console.log(sum10.join('&'))
 }
 let out10 = document.querySelector('.out-10')
 document.querySelector('.b-10').onclick = t10;
