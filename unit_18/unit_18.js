@@ -121,11 +121,20 @@ document.querySelector('.b-7').onclick = t7;
 
 // Task 8 ============================================
 /*  Дан массив a8 = [1,2,66,77,15] - преобразуйте ее в строку. Разделитель - дефис. Результат присвойте a8_res. Запускаться решение должно при вызове функции t8. */
-
+let sum8 = []
+let i = 0
 function t8() {
-
+    let a8 = [1,2,66,77,15]
+    while (i < a8.length) {
+        console.log(a8[i])
+        sum8 += a8[i]
+        i++
+    }
+    //let result8 = a8.join(',')
+    console.log(sum8)
+    out8.innerHTML = sum8
 }
-
+let out8 = document.querySelector('.out-8')
 document.querySelector('.b-8').onclick = t8;
 
 
