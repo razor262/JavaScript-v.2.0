@@ -51,24 +51,32 @@ document.querySelector('.b-3').onclick = t3;
 
 // Task 4 ============================================
 /*  На странице созданы 3 span.task-4 c атрибутом data. С помощью forEach переберите их и добавьте атрибуты в массив a4_res  Запускаться решение должно при вызове функции t4.*/
-let i = 0
+let array4 = []
 function t4() {
-    let one4 = document.querySelector('span.task-4') 
-    let two4 = one4.getAttribute('data')
-        console.log(two4)
-        console.log(one4)
-        
+    
+    let one4 = document.querySelectorAll('span.task-4')
+
+    /*
     while (i < one4.length) {
         console.log(one4[i])
+        let two4 = one4[i].getAttribute('data')
+        console.log(two4)
+        console.log(one4)
         i++
-    }
-        /*
+    }*/
+        
     one4.forEach(function callback(currentValue, index, array) {
         console.log(currentValue)
-        
-    })*/
+        console.log(index)
+        console.log(array)
+        let two4 = one4[index].getAttribute('data') + ' '
+        console.log(two4)
+        array4.push(two4)
+    })
+    console.log(array4)
+    out4.innerHTML += array4 + ' '
 }
-
+let out4 = document.querySelector('.out-4')
 document.querySelector('.b-4').onclick = t4;
 
 
