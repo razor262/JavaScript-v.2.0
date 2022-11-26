@@ -106,9 +106,17 @@ document.querySelector('.b-6').onclick = t6;
 /*  Дана строка str7='hello world hi mazai' - преобразуйте ее в массив и разбейте по словам. Причем слова не должны содержать пробелов и присвойте a6_res. выведите на страницу.  Запускаться решение должно при вызове функции t7. */
 
 function t7() {
-
+    let str7='hello world hi mazai'
+    let a7_res = str7.split(' ')
+    console.log(a7_res)
+    out7.innerHTML = a7_res
+    /*
+    for (let i = 0; i < str7.length; i++) {
+        const element = str7[i];
+        console.log(element)
+    }*/
 }
-
+let out7 = document.querySelector('.out-7')
 document.querySelector('.b-7').onclick = t7;
 
 // Task 8 ============================================
