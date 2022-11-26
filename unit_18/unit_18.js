@@ -141,10 +141,23 @@ document.querySelector('.b-8').onclick = t8;
 // Task 9 ============================================
 /*  Дан массив a9 = [[hi, mahai], [test, best]] - преобразуйте его в строку. Разделитель - дефис. Результат присвойте a9_res. Запускаться решение должно при вызове функции t9. Допускается лишний дефис в конце строки!!! */
 
+let a9 = [[hi, mahai], [test, best]]
 function t9() {
+ 
+   // a9.flat();
+    console.log(a9);
 
+    
+    a9.forEach(function callback(currentValue, index, array) {
+        console.log(currentValue)
+        console.log(index)
+        for (let i = 0; i < currentValue.length; i++) {
+            const element = currentValue[i];
+            console.log(element)
+        }
+    })
 }
-
+//let out9 = document.querySelector('.out-9')
 document.querySelector('.b-9').onclick = t9;
 
 
