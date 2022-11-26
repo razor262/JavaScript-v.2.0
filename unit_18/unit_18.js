@@ -127,7 +127,7 @@ function t8() {
     let a8 = [1,2,66,77,15]
     while (i < a8.length) {
         console.log(a8[i])
-        sum8 += a8[i]
+        sum8 += a8[i] + '/'
         i++
     }
     //let result8 = a8.join(',')
