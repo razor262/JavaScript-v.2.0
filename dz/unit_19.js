@@ -61,9 +61,11 @@ document.querySelector('.div-3').onclick = t3
 /*  Добавьте на блок .div-4 событие двойной клик и по двойному клику запуск функции t4. Функция должна возвращать и выводить на экран содержимое блока (только текст). Вывод осуществляется в out-4. */
 
 function t4() {
-
+    console.log('work')
+    out4.innerHTML = 'Только текст'
 }
-
+let out4 = document.querySelector('.out-4')
+document.querySelector('.div-4').ondblclick = t4
 // ваше событие здесь!!!
 
 // Task 5 ============================================
