@@ -13,10 +13,28 @@ document.querySelector('.div-1').onclick = t1
 // Task 2 ============================================
 /*  Добавьте на блок .div-2 событие клик и по клику запуск функции t2. Функция должна возвращать true или false в зависимости от того, нажата ли клавиша alt или нет в момент клика. Также, выводите на экран результат. Вывод осуществляется в out-2. */
 
-function t2() {
 
+function t2(e) {
+    console.log(e)
+
+    
+    if (e.altKey == true) {
+        console.log('нажата')
+        out2.textContent = true
+    }
+    if (e.ctrlKey == true) {
+        console.log('был нажат crtl')
+        out2.textContent = true
+    }
+    if (e.shiftKey == true) {
+        console.log('нажат Shift')
+        out2.textContent = true
+    }
+    //console.log('423')
 }
 
+let out2 = document.querySelector('.out-2')
+document.querySelector('.div-2').onclick = t2
 // ваше событие здесь!!!
 
 
@@ -136,7 +154,7 @@ function t11() {
 function t14() {
 
 }
-document.querySelector('t-14').onclick = t14;
+//document.querySelector('t-14').onclick = t14;
 
 
 // Task 15 ============================================
