@@ -60,9 +60,11 @@ document.querySelector('.div-3').onclick = t3
 // Task 4 ============================================
 /*  Добавьте на блок .div-4 событие двойной клик и по двойному клику запуск функции t4. Функция должна возвращать и выводить на экран содержимое блока (только текст). Вывод осуществляется в out-4. */
 
-function t4() {
-    console.log('work')
-    out4.innerHTML = 'Только текст'
+function t4(e) {
+    let one4 = document.querySelector('.div-4')
+    console.log(one4.textContent)
+    console.log(e)
+    out4.innerHTML = one4.textContent
 }
 let out4 = document.querySelector('.out-4')
 document.querySelector('.div-4').ondblclick = t4
@@ -72,9 +74,11 @@ document.querySelector('.div-4').ondblclick = t4
 /*  Дан блок .div-5.active. Добавьте на него событие двойной клик, по которому удалется класс active если он есть и добавляется если такого класса нет. */
 
 function t5() {
-
+    console.log('work')
+    active5.classList.toggle('active')
 }
-
+let active5 = document.querySelector('.active')
+document.querySelector('.div-5').ondblclick = t5
 // ваше событие здесь!!!
 
 // Task 6 ============================================
