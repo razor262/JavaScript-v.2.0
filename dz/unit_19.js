@@ -85,9 +85,18 @@ document.querySelector('.div-5').ondblclick = t5
 /*  Дан блок .div-6 и список .ul-6. При двойном клике на блоке скрывайте .ul-6 еcли он показан и показывайте если скрыт. Скрытие и показ делайте через добавление - удаление класса .hide */
 
 function t6() {
-
+    console.log('work')
+    let i = 0
+    while (i < ul6.length) {
+        console.log(ul6[i].textContent)
+        ul6[i].classList.toggle('hide')
+        i++
+    }
+    //ul6.classList.toggle('hide')
 }
-
+let out6 = document.querySelector('.out-6')
+let ul6 = document.querySelectorAll('.ul-6')
+document.querySelector('.div-6').ondblclick = t6
 // ваше событие здесь!!!
 
 
