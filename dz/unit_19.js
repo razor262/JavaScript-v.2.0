@@ -180,6 +180,7 @@ function t11() {
     }
     
 }
+
 document.querySelector('.div-11').onmouseleave = t111
 
 let div111 = document.querySelector('.div-11')
@@ -194,10 +195,13 @@ function t111() {
 
 // Task 12 ============================================
 /*  Дан блок .div-12. Добавьте на него событие mousedown - при нажатии кнопки мыши - добавляйте ему класс active. */
+document.querySelector('.div-12').onmousedown = t12
+let div12 = document.querySelector('.div-12')
+function t12 (e) {
+    console.log(e)
+    div12.classList.add('active')
 
-// () => {
-
-// }
+}
 
 // ваше событие здесь!!!
 
