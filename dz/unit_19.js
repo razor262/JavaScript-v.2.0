@@ -160,9 +160,10 @@ document.querySelector('.div-9').oncontextmenu = t9
 
 // Task 10 ============================================
 /*  Дан блок .div-10. Внутри блока - изображение 1.png. При наведении мыши (mouseenter)  - меняйте изображение на 2.png. */
-
+document.querySelector('.div-10').onmouseenter = t10
+let div10 = document.querySelector('.div-10')
 function t10() {
-
+    div10.innerHTML = '<img src="img/2.png" alt="">'
 }
 
 // ваше событие здесь!!!
