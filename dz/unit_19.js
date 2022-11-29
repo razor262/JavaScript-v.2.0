@@ -106,7 +106,10 @@ document.querySelector('.div-6').ondblclick = t6
 function t7() {
 
     console.log('work')
+    div7.classList.toggle('active')
+
 }
+let div7 = document.querySelector('.div-7')
 document.querySelector('.div-7').oncontextmenu = t7
 // ваше событие здесь!!!
 
@@ -114,19 +117,44 @@ document.querySelector('.div-7').oncontextmenu = t7
 /*  Дано checkbox .ch-8. Повесьте на него событие onchange при котором на документе отключается клик правой кнопкой мыши если checkbox выбран и отключает если не выбран. */
 
 function t8() {
-
+    //console.log(ch8.cheked)
+    if(ch8.checked) {
+        console.log('чекбокс выбран')
+        ch8.removeEventListener('click', t8)
+        document.oncontextmenu = function(){
+            return false
+        } 
+    } else {
+        console.log('чекбокс не выбран')
+        document.oncontextmenu = function(){
+            return true
+        } 
+    }
+    /*
+    if (ch8 == true) {
+        console.log(ch8)
+    }*/
 }
+let ch8 = document.querySelector('.ch-8')
+document.querySelector('.ch-8').onclick = t8
 
+document.querySelector('.ch-8').oncontextmenu = t8
+//rightClick.addEventListener('click', t8)
 // ваше событие здесь!!!
 
 
 // Task 9 ============================================
 /*  Дан блок .div-9. Внутри блока - изображение 1.png. При клике правой кнопкой мыши  - меняйте изображение на 2.png. Надеюсь вы догадаетесь изменить только src изображения? */
 
-function t9() {
+function t9(e) {
 
+    console.log(e)
+
+    div9.innerHTML = '<img src="img/2.png" alt="">'
+    console.log(div9)
 }
-
+let div9 = document.querySelector('.div-9')
+document.querySelector('.div-9').oncontextmenu = t9
 // ваше событие здесь!!!
 
 
