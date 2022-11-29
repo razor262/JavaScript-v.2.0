@@ -208,14 +208,17 @@ function t12 (e) {
 
 // Task 13 ============================================
 /*  Дан блок .div-13. Добавьте на него событие mousedown - при нажатии кнопки мыши - добавляйте ему класс active. Добавьте ему событие mouseup - при отпускании мыши - удаляйте класс active. */
+let div13 = document.querySelector('.div-13')
 
-// () =>  {
+document.querySelector('.div-13').onmousedown = () =>  {
+    console.log('при нажатии добавляет класс')
+     div13.classList.add('active')
+}
 
-// }
-
-// () =>  {
-
-// }
+document.querySelector('.div-13').onmouseup = () =>  {
+    console.log('отпустил мышку')
+    div13.classList.remove('active')
+}
 // ваше событие здесь!!!
 
 
