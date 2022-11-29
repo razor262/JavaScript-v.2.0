@@ -105,8 +105,9 @@ document.querySelector('.div-6').ondblclick = t6
 
 function t7() {
 
+    console.log('work')
 }
-
+document.querySelector('.div-7').oncontextmenu = t7
 // ваше событие здесь!!!
 
 // Task 8 ============================================
