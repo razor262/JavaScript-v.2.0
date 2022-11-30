@@ -227,9 +227,11 @@ document.querySelector('.div-13').onmouseup = () =>  {
 
 function t14() {
 
+    console.log('work')
+    div14.classList.add('active')
 }
-//document.querySelector('t-14').onclick = t14;
-
+document.querySelector('.b-14').onclick = t14;
+let div14 = document.querySelector('.div-14')
 
 // Task 15 ============================================
 /*  Дан блок .div-15. Добавьте на него событие move. При каждом движении мыши увеличивайте число внутри на 1. */
