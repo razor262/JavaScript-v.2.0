@@ -248,10 +248,15 @@ document.querySelector('.div-15').onmousemove = t15
 
 // Task 16 ============================================
 /*  Дан блок .div-16. Добавьте на него событие move. При каждом движении мыши увеличивайте ширину блока на 1px. */
-
+let w16 = 75
 function t16() {
 
+    console.log('work')
+    w16 += 1
+    div16.style.width = w16 + 'px'
 }
+let div16 = document.querySelector('.div-16')
+document.querySelector('.div-16').onmousemove = t16
 // ваше событие здесь!!!
 
 // Task 17 ============================================
