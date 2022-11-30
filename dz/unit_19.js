@@ -235,10 +235,14 @@ let div14 = document.querySelector('.div-14')
 
 // Task 15 ============================================
 /*  Дан блок .div-15. Добавьте на него событие move. При каждом движении мыши увеличивайте число внутри на 1. */
-
+let sum15 = 0
 function t15() {
-
+    sum15 += 1
+    //console.log('work')
+    div15.textContent = sum15
 }
+let div15 = document.querySelector('.div-15')
+document.querySelector('.div-15').onmousemove = t15
 // ваше событие здесь!!!
 
 
