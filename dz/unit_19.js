@@ -264,19 +264,46 @@ document.querySelector('.div-16').onmousemove = t16
 
 function t17On() {
 
+    console.log('work')
+   
+    
+    div16.onmousemove = function(){
+        return true
+    } 
 }
+let on17 = document.querySelector('.b-17_on')
+on17.addEventListener('click', t17On)
+
 function t17Off() {
 
+    console.log('off')
+   
+    
+    div16.onmousemove = function(){
+        return false
+    } 
 }
+let on177 = document.querySelector('.b-17_off')
+on177.addEventListener('click', t17Off)
 // ваше событие здесь!!!
+var listener = function (event) {
+    console.log('сработало')
+  };
 // ваше событие здесь!!!
 
 // Task 18 ============================================
 /*  Дан блок div-18. Напишите фукнцию t18 которая выводит в данный блок его ширину при событии onmouseenter. */
+let sum18 = 0
+function t18(e) {
 
-function t18() {
+    console.log(e)
+    console.log(div18.offsetWidth)
 
+    sum18 = div18.offsetWidth
+    div18.textContent = sum18
 }
+let div18 = document.querySelector('.div-18')
+document.querySelector('.div-18').onmouseenter = t18
 // ваше событие здесь!!!
 
 // Task 19 ============================================
