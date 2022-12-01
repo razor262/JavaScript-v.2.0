@@ -7,24 +7,20 @@ document.querySelector('.i-1').onkeyup = function (event) {
     out1.textContent += event.key
 }
 let out1 = document.querySelector('.out-1')
-/*
-function t1(e) {
-    console.log(e)
-    console.log(i1.value)
-    console.log('keyup')
-}
-
-let i1 = document.querySelector('.i-1')
-i1.onclick = t1*/
 // ваше событие здесь!!!
 
 // Task 2 ============================================
 /*  Дан input .i-2. Напишите функцию t2, которая выводит в .out-2 код символа и возвращает его. */
 
-function t2() {
+function t2(e) {
 
+    console.log(e)
+    console.log(e.keyCode)
+    out2.innerHTML += e.keyCode + ' '
 }
-
+let out2 = document.querySelector('.out-2')
+let i2 = document.querySelector('.i-2')
+i2.onkeypress = t2
 // ваше событие здесь!!!
 
 
