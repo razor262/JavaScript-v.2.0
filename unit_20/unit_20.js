@@ -82,11 +82,25 @@ i5.onkeypress = t5
 
 // Task 6 ============================================
 /*  Дан input .i-6. Напишите функцию t6, которая выводит в .i-6 только символы в нижнем регистре.  */
+let result6 = ''
+let sum6 = ''
+function t6(e) {
 
-function t6() {
+    console.log(e.key)
+    result6 = e.key
+    sum6 = e.key
+    sum6 = sum6.toLowerCase()
+    console.log(result6)
+
+    if (result6 == sum6) {
+        console.log(result6)
+        out6.innerHTML += result6 + " "
+    }
 
 }
-
+let out6 = document.querySelector('.out-6')
+let i6 = document.querySelector('.i-6')
+i6.onkeypress = t6
 // ваше событие здесь!!!
 
 
