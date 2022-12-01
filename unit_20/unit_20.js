@@ -107,11 +107,20 @@ i6.onkeypress = t6
 // Task 7 ============================================
 /*  Дан input .i-7. Напишите функцию t7, которая выводит в .out-7 случаный символ из массива a7 при каждом вводе символа. */
 
+
 function t7() {
-    const a7 = [];
+
+
+    const a7 = ['d', 'f', 'a', 5, 2, 8];
+    const rand = Math.floor(Math.random() * a7.length);
+
+    //alert(a7[rand]);// Выведем, например: JavaScript
+    out7.textContent = a7[rand]
 
 }
-
+let out7 = document.querySelector('.out-7')
+let i7 = document.querySelector('.i-7')
+i7.onkeypress = t7
 // ваше событие здесь!!!
 
 // Task 8 ============================================
