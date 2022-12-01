@@ -68,11 +68,16 @@ i4.onkeypress = t4
 
 // Task 5 ============================================
 /*  Дан input .i-5. Напишите функцию t5, которая выводит в .out-5 все вводимые символы в верхнем регистре. Т.е. пользователь ввел AbCd и функция выведет ABCD. */
-
-function t5() {
-
+let result5 = ''
+function t5(e) {
+    console.log('work')
+    result5 = e.key
+    result5 = result5.toUpperCase()
+    out5.innerHTML += result5
 }
-
+let out5 = document.querySelector('.out-5')
+let i5 = document.querySelector('.i-5')
+i5.onkeypress = t5
 // ваше событие здесь!!!
 
 // Task 6 ============================================
