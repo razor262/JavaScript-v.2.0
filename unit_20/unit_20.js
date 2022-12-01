@@ -51,11 +51,19 @@ i3.onkeypress = t3
 
 // Task 4 ============================================
 /*  Дан input .i-4. Напишите функцию t4, которая выводит в .out-4 только символы в нижнем регистре. Т.е. ввели ab4Bci в out получаем ab4bci. */
+let sum4 = ''
 
-function t4() {
+function t4(e) {
 
+    console.log(e)
+    console.log(e.key)
+    sum4 = e.key
+    sum4 = sum4.toLowerCase()
+    out4.innerHTML += sum4
 }
-
+let out4 = document.querySelector('.out-4')
+let i4 = document.querySelector('.i-4')
+i4.onkeypress = t4
 // ваше событие здесь!!!
 
 // Task 5 ============================================
