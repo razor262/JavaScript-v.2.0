@@ -1,10 +1,21 @@
 
 // Task 1 ============================================
 /* Дан input .i-1. Напишите функцию t1, которая выводит в .out-1 символ и возвращает его. Во всех последующих задачах - работаем с латиницей и цифрами.*/
-
-function t1() {
+document.querySelector('.i-1').onkeyup = function (event) {
+    //console.log('keyup')
+    console.log(event.key)
+    out1.textContent += event.key
+}
+let out1 = document.querySelector('.out-1')
+/*
+function t1(e) {
+    console.log(e)
+    console.log(i1.value)
+    console.log('keyup')
 }
 
+let i1 = document.querySelector('.i-1')
+i1.onclick = t1*/
 // ваше событие здесь!!!
 
 // Task 2 ============================================
