@@ -28,11 +28,24 @@ i2.onkeypress = t2
 /*  Дан input .i-3. Напишите функцию t3, которая выводит на страницу true если введен символ и false если цифра. Для определения - используйте код клавиши. */
 
 let w3 = 75;
-
-function t3() {
-
+let result3 = 0
+function t3(e) {
+    console.log(e)
+    console.log(e.key)
+    console.log(e.keyCode)
+    result3 = e.keyCode
+    console.log(result3)
+    if (result3 >= 48 || result3 <= 57) {
+        console.log('this number')
+        out3.innerHTML = 'true'
+    } if (result3 < 48 || result3 > 57) {
+        console.log('this string')
+        out3.innerHTML = 'false'
+    }
 }
-
+let out3 = document.querySelector('.out-3')
+let i3 = document.querySelector('.i-3')
+i3.onkeypress = t3
 // ваше событие здесь!!!
 
 
