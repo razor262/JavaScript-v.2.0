@@ -322,16 +322,3 @@ div19.onmouseout = t19
 // ваше событие здесь!!!
 
 
-// Task 20 ============================================
-/*  Дан элемент progress. Напишите фукнцию t20 которая увеличивает его value на 1 при каждом событии mousemove внутри progress. */
-let sum20 = 0
-function t20() {
-
-    console.log(div20.value)
-    sum20 += 1
-    div20.value = sum20
-}
-let div20 = document.querySelector('progress')
-console.log(div20)
-div20.onmousemove = t20 
-// ваше событие здесь!!!

@@ -125,21 +125,50 @@ i7.onkeypress = t7
 
 // Task 8 ============================================
 /*  Дан input .i-8. Напишите функцию t8, которая выводит в .out-8 вводимый в input текст, но заменяет i на 1, o на 0, l на 7. */
-
-function t8() {
-
+let sum8 = ''
+function t8(e) {
+    //console.log(e)
+    sum8 = e.key
+    
+    if (sum8 == 'i') {
+        out8.innerHTML += '1'
+    }
+    if (sum8 == 'o') {
+        out8.innerHTML += '0'
+    }
+    if (sum8 == 'l') {
+        out8.innerHTML += '7'
+    } else {
+        out8.innerHTML += sum8
+    }
 }
-
+let out8 = document.querySelector('.out-8')
+let i8 = document.querySelector('.i-8')
+i8.onkeypress = t8
 // ваше событие здесь!!!
 
 
 // Task 9 ============================================
 /* Дан input .i-9. Напишите функцию t8, выводит в .out-9 количество нажатых клавиш стрелка вниз. */
-
-function t9() {
-
+let sum9 = 0
+function t9(e) {
+    console.log(e)
+    console.log(e.keyCode)
+    console.log(e.which)
+    //sum9 = e.keyCode
+    
+    if (e.keyCode == 40) {
+        console.log('нажата стрелка вниз')
+        sum9 += 1
+    }
+    console.log(sum9)
+    out9.textContent = sum9
 }
+let out9 = document.querySelector('.out-9')
+let i9 = document.querySelector('.i-9')
+i9.tabIndex = 0
 
+i9.addEventListener('keydown', t9)
 // ваше событие здесь!!!
 
 
