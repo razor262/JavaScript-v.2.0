@@ -174,13 +174,28 @@ i9.addEventListener('keydown', t9)
 
 // Task 10 ============================================
 /*  Дан input .i-10 и изображение 1.png. Добавьте событие на input, при нажатии клавиш стрелка вправо и стрелка влево увеличивать ширину изображения. Клавиши стрелка вверх и вниз - увеличивать высоту изображения. Одно нажатие клавиши - 1px. */
-
-function t10() {
+let w10 = 75
+function t10(e) {
+    
+    console.log(e.keyCode)
+    if (e.keyCode == 37 || e.keyCode == 39) {
+        console.log('получилось')
+        w10 += 1
+        div10.style.width = w10 + 'px'
+    }
+    if (e.keyCode == 38 || e.keyCode == 40) {
+        console.log('получилось')
+        w10 += 1
+        div10.style.height = w10 + 'px'
+    }
 
 }
+let div10 = document.querySelector('.div-10')
+let i10 = document.querySelector('.i-10')
 
+i10.tabIndex = 0
 // ваше событие здесь!!!
-
+i10.addEventListener('keydown', t10)
 // Task 11 ============================================
 /*  Проект. 
 1. Выполните в html верстку клавиш клавиатуры. Сверстайте – блок цифровых клавиш от 1 до 0. И ряд клавиш q – p. Добавьте клавишу левый shift, левый  alt, левый ctrl,  пробел, enter.
