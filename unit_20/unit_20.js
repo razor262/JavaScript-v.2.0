@@ -206,10 +206,141 @@ i10.addEventListener('keydown', t10)
 
 function t11(e) {
     console.log(e)
-  
+    console.log(e.key)
+    if (e.key == 1 ) {
+        console.log('work')
+        button1.classList.toggle('active')
+    }
+    if (e.key == 2 ) {
+        console.log('work')
+        button2.classList.toggle('active')
+    }
+    if (e.key == 3 ) {
+        console.log('work')
+        button3.classList.toggle('active')
+    }
+    if (e.key == 4 ) {
+        console.log('work')
+        button4.classList.toggle('active')
+    }
+    if (e.key == 5 ) {
+        console.log('work')
+        button5.classList.toggle('active')
+    }
+    if (e.key == 6 ) {
+        console.log('work')
+        button6.classList.toggle('active')
+    }
+    if (e.key == 7 ) {
+        console.log('work')
+        button7.classList.toggle('active')
+    }
+    if (e.key == 8 ) {
+        console.log('work')
+        button8.classList.toggle('active')
+    }
+    if (e.key == 9 ) {
+        console.log('work')
+        button9.classList.toggle('active')
+    }
+    if (e.key == 0 ) {
+        console.log('work')
+        button0.classList.toggle('active')
+    }
+
+    if (e.key == 'q' ) {
+        console.log('work')
+        button11.classList.toggle('active')
+    }
+    if (e.key == 'w' ) {
+        console.log('work')
+        button12.classList.toggle('active')
+    }
+    if (e.key == 'e' ) {
+        console.log('work')
+        button13.classList.toggle('active')
+    }
+    if (e.key == 'r' ) {
+        console.log('work')
+        button14.classList.toggle('active')
+    }
+    if (e.key == 't' ) {
+        console.log('work')
+        button15.classList.toggle('active')
+    }
+    if (e.key == 'y' ) {
+        console.log('work')
+        button16.classList.toggle('active')
+    }
+    if (e.key == 'u' ) {
+        console.log('work')
+        button17.classList.toggle('active')
+    }
+    if (e.key == 'i' ) {
+        console.log('work')
+        button18.classList.toggle('active')
+    }
+    if (e.key == 'o' ) {
+        console.log('work')
+        button19.classList.toggle('active')
+    }
+    if (e.key == 'p' ) {
+        console.log('work')
+        button20.classList.toggle('active')
+    }
+
+    if (e.key == 'Shift' ) {
+        console.log('work')
+        button21.classList.toggle('active')
+    }
+    if (e.key == 'Alt' ) {
+        console.log('work')
+        button22.classList.toggle('active')
+    }
+    if (e.key == 'Control' ) {
+        console.log('work')
+        button23.classList.toggle('active')
+    }
+    if (e.key == ' ' ) {
+        console.log('work')
+        button24.classList.toggle('active')
+    }
+    if (e.key == 'Enter' ) {
+        console.log('work')
+        button25.classList.toggle('active')
+    }
 }
 let out11 = document.querySelector('.out-11')
+
 let i11 = document.querySelector('.i-11')
-i11.onkeypress = t11
+i11.onkeydown = t11
+i11.onkeyup = t11
 // ваше событие здесь!!!
 
+let button1 = document.querySelector('.button1')
+let button2 = document.querySelector('.button2')
+let button3 = document.querySelector('.button3')
+let button4 = document.querySelector('.button4')
+let button5 = document.querySelector('.button5')
+let button6 = document.querySelector('.button6')
+let button7 = document.querySelector('.button7')
+let button8 = document.querySelector('.button8')
+let button9 = document.querySelector('.button9')
+let button0 = document.querySelector('.button0')
+
+let button11 = document.querySelector('.button11')
+let button12 = document.querySelector('.button12')
+let button13 = document.querySelector('.button13')
+let button14 = document.querySelector('.button14')
+let button15 = document.querySelector('.button15')
+let button16 = document.querySelector('.button16')
+let button17 = document.querySelector('.button17')
+let button18 = document.querySelector('.button18')
+let button19 = document.querySelector('.button19')
+let button20 = document.querySelector('.button20')
+
+let button21 = document.querySelector('.button21')
+let button22 = document.querySelector('.button22')
+let button23 = document.querySelector('.button23')
+let button24 = document.querySelector('.button24')
+let button25 = document.querySelector('.button25')
