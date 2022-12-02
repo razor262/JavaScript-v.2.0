@@ -204,9 +204,12 @@ i10.addEventListener('keydown', t10)
 4. Ограничения проекта – тестируются только указанные клавиши в латинской раскладке. Комбинации клавиш не тестируются. Т.е. нажиматься shift+A, ctrl+shift – не будут. Все символы вводятся в нижнем регистре.
 */
 
-function t11() {
-
+function t11(e) {
+    console.log(e)
+  
 }
-
+let out11 = document.querySelector('.out-11')
+let i11 = document.querySelector('.i-11')
+i11.onkeypress = t11
 // ваше событие здесь!!!
 
