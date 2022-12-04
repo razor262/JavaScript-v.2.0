@@ -13,11 +13,15 @@ let start1 = document.querySelector('.div-1').addEventListener('touchstart', t1)
 
 // Task 2 ============================================
 /* Создайте блок div-2. Добавьте на него событие touchstart. Выведите в out-2 число срабатываний события. */
-
+let sum2 = 0
 function t2() {
     console.log('work')
+    sum2 += 1
+    out2.textContent = sum2
 }
-document.querySelector('.div-2').addEventListener('onclick', t2)
+let out2 = document.querySelector('.out-2')
+let result2 = document.querySelector('.div-2')
+result2.addEventListener('touchstart', t2)
 // ваше событие здесь!!!
 
 
