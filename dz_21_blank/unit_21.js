@@ -84,10 +84,16 @@ b5.onclick = t5
 // Task 6 ============================================
 /*  Добавьте событие ontouchend на div-4. При его срабатывании выведите в out-6 слово touchend. */
 
-function t6() {
-
+function t6(e) {
+    console.log(e)
+    document.querySelector('.div-4').ontouched = t66
 }
-
+function t66() {
+    out6.textContent = 'touched'
+}
+let out6 = document.querySelector('.out-6')
+let button6 = document.querySelector('.b-6')
+button6.onclick = t6
 // ваше событие здесь!!!
 
 
