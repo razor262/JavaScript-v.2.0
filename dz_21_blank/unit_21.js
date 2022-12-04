@@ -58,18 +58,27 @@ result32.addEventListener('touchstart', t32)
 /*  Создайте блок div-4. И кнопку b-4. При нажатии кнопки - добавляйте событие ontouchstart на блок div-4. При событии происходит вывод текста touch в out-4.  */
 
 function t4() {
-
+    console.log('work')
+    div4.addEventListener('touchstart', t44)
 }
-
+function t44(e) {
+    console.log(e)
+    document.querySelector('.out-4').textContent = 'работает)'
+}
+let div4 = document.querySelector('.div-4')
+let button4 = document.querySelector('.b-4')
+button4.addEventListener('touchstart', t4)
 // ваше событие здесь!!!
 
 // Task 5 ============================================
 /*  Дана кнопка b-5. При ее нажатии очищайте событие ontouchstart на блоке div-4. */
 
-function t5() {
-
+function t5(e) {
+    console.log(e)
+    div4.removeEventListener('touchstart', t44)
 }
-
+let b5 = document.querySelector('.b-5')
+b5.onclick = t5
 // ваше событие здесь!!!
 
 // Task 6 ============================================
