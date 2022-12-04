@@ -2,18 +2,22 @@
 // Task 1 ============================================
 /* Создайте блок div-1. Добавьте на него событие touchstart. Выведите в out-1 слово  touch если событие сработает. */
 
-function t1() {
+function t1(e) {
+    console.log(e)
+    document.querySelector('.out-1').innerHTML = 'touch'
 }
-
+let start1 = document.querySelector('.div-1').addEventListener('touchstart', t1)
+//start1.addEventListener('onclick', t1)
+//start1.touchstart = t1
 // ваше событие здесь!!!
 
 // Task 2 ============================================
 /* Создайте блок div-2. Добавьте на него событие touchstart. Выведите в out-2 число срабатываний события. */
 
 function t2() {
-
+    console.log('work')
 }
-
+document.querySelector('.div-2').addEventListener('onclick', t2)
 // ваше событие здесь!!!
 
 
