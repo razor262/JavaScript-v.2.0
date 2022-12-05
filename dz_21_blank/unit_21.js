@@ -111,11 +111,20 @@ result7.addEventListener('touchend', t7)
 
 // Task 8 ============================================
 /*  Дан блок div-8. Добавьте на него событие touch, которое при срабатывании окрашивает блок случаным цветом из массива a8=[red, green, blue, orange, pink, yellow] */
-
+/*
+function getRandomArrayElement(arr8){
+    return arr8[Math.floor(Math.random()*arr8.length)]
+ }*/
 function t8() {
+    
+    let arr8 = ['red', 'green', 'blue', 'orange', 'pink', 'yellow']
 
+    let sum8 = arr8[Math.floor(Math.random()*arr8.length)]
+    console.log(sum8)
+    result8.style.backgroundColor = sum8
 }
-
+let result8 = document.querySelector('.div-8')
+result8.addEventListener('touchend', t8)
 // ваше событие здесь!!!
 
 
