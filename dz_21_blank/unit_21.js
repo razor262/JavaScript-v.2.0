@@ -106,7 +106,7 @@ function t7(e) {
     //container.appendChild(result7)
 }
 let result7 = document.querySelector('.div-7')
-result7.addEventListener('click', t7)
+result7.addEventListener('touchend', t7)
 // ваше событие здесь!!!
 
 // Task 8 ============================================
