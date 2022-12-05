@@ -130,11 +130,15 @@ result8.addEventListener('touchend', t8)
 
 // Task 9 ============================================
 /* Дан блок div-9. Добавьте событие ontouch. Выводите количество одновременных касаний в out-9. */
-
-function t9() {
-
+let sum9 = 0
+function t9(e) {
+    console.log(e)
+    sum9 += 1
+    out9.textContent = sum9
 }
-
+let out9 = document.querySelector('.out-9')
+let result9 = document.querySelector('.div-9')
+result9.addEventListener('touchend', t9)
 // ваше событие здесь!!!
 
 
