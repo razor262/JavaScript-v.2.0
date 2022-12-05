@@ -100,10 +100,13 @@ button6.onclick = t6
 // Task 7 ============================================
 /*  Дан блок div-7. Добавьте событие touch, при срабатывании которого окрашивайте блок в красный цвет. */
 
-function t7() {
-
+function t7(e) {
+    console.log(e)
+    result7.style.backgroundColor = 'red'
+    //container.appendChild(result7)
 }
-
+let result7 = document.querySelector('.div-7')
+result7.addEventListener('click', t7)
 // ваше событие здесь!!!
 
 // Task 8 ============================================
