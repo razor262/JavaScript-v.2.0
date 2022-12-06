@@ -156,11 +156,24 @@ div10.addEventListener('touchmove', t10)
 
 // Task 11 ============================================
 /*  Дан блок div-11. Добавьте на него событие touch. При срабатывании выводите радиус события radiusX, radiusY. */
+/*
+function t11() {
+    
+  }*/
+  
 
-function t11(e) {
+let div11 = document.querySelector('.div-11')
+div11.addEventListener('click', event => {
+    console.log('Позиция x относительно документа', event.pageX)
+    console.log('Позиция y относительно документа', event.pageY)
+  
+    console.log('Позиция x относительно экрана', event.clientX)
+    console.log('Позиция y относительно экрана', event.clientY)
 
-}
-
+  })
+  
+  // { x: ..., y: ..., top: ..., left: ..., right: ..., bottom: ... }
+  //const rect = element.getBoundingClientRect()
 // ваше событие здесь!!!
 
 // Task 12 ============================================
@@ -173,22 +186,69 @@ function t11(e) {
 <p>5. Добавьте во все действия следующее - в изображении img-12-max заменяется src на активную. Т.е. произошло событие - заменилась главная картинка.</p>
 */
 
+
 const images = document.querySelectorAll('.img-12-min');
 let count = 0; // переменная, которая указывает на номер активного изображения в images
+console.log(typeof images)
 
-const next = document.querySelectorAll('.next');
+const bigImage = document.querySelector('.img-12-max')
+
+
+const next = document.querySelector('.next');
 next.onclick = nextFunction;
 
-const prev = document.querySelectorAll('.prev');
+const prev = document.querySelector('.prev');
 prev.onclick = prevFunction;
 
-function nextFunction() {
 
+
+let btn12reset = document.createElement('button')
+btn12reset.className = 'button-primary reset'
+btn12reset.textContent = 'Reset'
+next.after(btn12reset)
+btn12reset.onclick = resetFunction;
+
+for (const key in images) {
+    
+       console.log(images[key])
+        
+    
+}
+
+function nextFunction() {
+    console.log('next')
+    images[count].classList.remove('active-img')
+ 
+    count += 1
+    if (count == images.length) {
+        count = 0
+    }
+    console.log(count)
+    images[count].classList.add('active-img')
+    
+    bigImage.src = images[count].src
+    console.log(bigImage.src)
 }
 
 function prevFunction() {
+    console.log('prev')
+    images[count].classList.remove('active-img')
+ 
+    count -= 1
+    if (count == -1) {
+        count = images.length - 1
+    }
+    console.log(count)
+    images[count].classList.add('active-img')
 
+    bigImage.src = images[count].src
 }
 
+function resetFunction() {
+    images[count].classList.remove('active-img')
+    count = 0
+    images[count].classList.add('active-img')
 
+    bigImage.src = images[count].src
+}
 // ваше событие здесь!!!
