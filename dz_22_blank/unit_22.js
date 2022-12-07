@@ -29,7 +29,15 @@ document.querySelector('.b-1').onclick = t1;
 function t2() {
     let a = 4;
     let b = 5;
-    document.querySelector('.out-2222222').innerHTML = a*b;
+    try {
+        alert('Начало блока try')
+        document.querySelector('.out-2222222').innerHTML = a*b;
+        alert('Конец блока try');   // (2) <--
+    } catch (err) {
+        alert('Блок catch не получит управление, так как нет ошибок')
+        document.querySelector('.out-2').innerHTML = a*b
+    }
+    alert("Потом код продолжит выполнение...")
 
 }
 
