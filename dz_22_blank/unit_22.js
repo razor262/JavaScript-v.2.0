@@ -3,13 +3,24 @@
 
 
 function t1() {
+
     // тут добавляете try
-    let a = 22;
-    let c = a + d;
+    try {
+        alert('Начало блока try');  // (1) <--
+        let a = 22;
+        let c = a + d;
+        document.querySelector('.out-1').innerHTML = c
+        alert('Конец блока try');   // (2) <--
+    } catch (err) {
+        alert('Блок catch не получит управление, так как нет ошибок');
+        document.querySelector('.out-1').innerHTML = 1
+    }
+    alert("Потом код продолжит выполнение...");
     // тут catch
     // .. и вывод
+    
 }
-
+//let out1 = document.querySelector('.out-1')
 document.querySelector('.b-1').onclick = t1;
 
 //  Task 2
