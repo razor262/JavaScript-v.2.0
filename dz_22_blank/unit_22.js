@@ -51,9 +51,22 @@ document.querySelector('.b-2').onclick = t2;
 function t3() {
     let a = 4;
     let b = 5;
-    document.querySelector('.out-3').innerHTML = a*b;
-}
+    let div = document.createElement('div')
+    div.className = 'outresult'
+    div.textContent = 'здесь будет текст'
+    div.style.height = '50px'
+    out3.prepend(div)
 
+    try {
+        alert('Начало блока try')
+        div.innerHTML = a*b;
+        alert('Конец блока try')
+    } catch (err) {
+        alert('Блок catch не получит управление, так как нет ошибок')
+        
+    }
+}
+let out3 = document.querySelector('.out-3')
 document.querySelector('.b-3').onclick = t3;
 
 //  Task 4
