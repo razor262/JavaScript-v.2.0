@@ -51,20 +51,23 @@ document.querySelector('.b-2').onclick = t2;
 function t3() {
     let a = 4;
     let b = 5;
-    let div = document.createElement('div')
-    div.className = 'outresult'
-    div.textContent = 'здесь будет текст'
-    div.style.height = '50px'
-    out3.prepend(div)
+
 
     try {
         alert('Начало блока try')
         div.innerHTML = a*b;
         alert('Конец блока try')
     } catch (err) {
-        alert('Блок catch не получит управление, так как нет ошибок')
-        
-    }
+        alert('Была ошибка catch получил управление')
+        let div = document.createElement('div')
+        div.className = 'outresult'
+        div.textContent = 'здесь будет текст'
+        div.style.height = '50px'
+        out3.prepend(div)
+
+        div.innerHTML = a*b
+    } 
+
 }
 let out3 = document.querySelector('.out-3')
 document.querySelector('.b-3').onclick = t3;
@@ -73,12 +76,23 @@ document.querySelector('.b-3').onclick = t3;
 // Дана переменная a. В переменную делается push. Используя try catch отловите ошибки если они есть. Если ошибка вывести в out-4 число 0. Если не ошибка - то результирующий массив через пробел.
 
 let a = [2,3,4];
-// a = 5;
+//a = 5;
+let array3 = []
 
 function t4() {
-    a.push(7);
-}
+    
+    try {
+        alert('Начало блока try')
 
+        a.push(7)
+        out4.innerHTML = a.join(' ')
+        alert('Конец блока try')
+    } catch (err) {
+        alert('Блок catch не получит управление, так как нет ошибок')
+        out4.innerHTML = 0
+    }
+}
+let out4 = document.querySelector('.out-4')
 document.querySelector('.b-4').onclick = t4;
 
 
@@ -87,8 +101,17 @@ document.querySelector('.b-4').onclick = t4;
 
 function t5() {
     let p = document.querySelectorAll('p');
-    p.push(3);
+    //p = []
+    try {
+        p.push(3)
+        console.log(p)
+    } catch (err) {
+        out5.innerHTML = 0
+    } finally {
+        out51.innerHTML = 'finnaly'
+    }
 }
-
+let out5 = document.querySelector('.out-5')
+let out51 = document.querySelector('.out-5-1')
 document.querySelector('.b-5').onclick = t5;
 
