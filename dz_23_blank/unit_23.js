@@ -119,11 +119,20 @@ button7.onclick = t7
 
 // Task 8 ============================================
 /*   Создайте функцию t8 при запуске которой из a7 удаляется последний элемент. После чего массив сохраняется в LS с ключем a7. Использовать массив из предыдущего задания. */
-
+// достать, удалить, снова записать
 function t8() {
-
+    console.log('work')
+    let result8 = localStorage.getItem('a7')
+    console.log(result8)
+    let object8 = JSON.parse(result8)
+    console.log(object8)
+    let n8 = object8.pop()
+    console.log(n8)
+    console.log(object8)
+    localStorage.setItem('object8', JSON.stringify(object8))
 }
-
+let button8 = document.querySelector('.b-8')
+button8.onclick = t8
 // ваше событие здесь!!!
 
 
