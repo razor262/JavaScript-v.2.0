@@ -32,9 +32,18 @@ button2.onclick = t2
 /*  При нажатии кнопки t3 выведите из LS сохранненный массив a2. Выведите в out-3 в формате ключ пробел значение перенос строки.  */
 
 function t3() {
-
+    let b3 = localStorage.getItem('a2')
+    console.log(b3)
+    b3 = JSON.parse(b3)
+    for (const key in b3) {
+            const element = 'ключ: ' + key + ' ' + 'значаение: ' + b3[key] + ' '
+            console.log(element)
+            out3.innerHTML += element
+    }
 }
-
+let out3 = document.querySelector('.out-3')
+let button3 = document.querySelector('.b-3')
+button3.onclick = t3
 // ваше событие здесь!!!
 
 
