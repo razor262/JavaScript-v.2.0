@@ -110,6 +110,7 @@ function t7() {
     console.log(current7)
     a7.push(current7)
     console.log(a7)
+    localStorage.setItem('a7', JSON.stringify(a7))
 }
 let i7 = document.querySelector('.i-7')
 let button7 = document.querySelector('.b-7')
