@@ -2,18 +2,29 @@
 // Task 1 ============================================
 /* Создайте функцию t1 которая записывает  в LS  ключ 5 со значением 11. Проверьте что происходит при повторном вызове функции. Запускается ф-я по кнопкуе b-1. */
 
-function t1() {
+function t1(e) {
+    //console.log(e)
+    localStorage.setItem('5', 11)
+    console.log(localStorage.getItem('5'))
 }
-
+let button1 = document.querySelector('.b-1')
+button1.onclick = t1
 // ваше событие здесь!!!
 
 // Task 2 ============================================
 /* Создайте функцию t2 которая записывает  в LS  массив a2 = [7,6,5]. Ключ a2. Проверьте что происходит при повторном вызове функции. Запускается ф-я по кнопкуе b-2. */
-
+let a2 = [7,6,5]
 function t2() {
-
+    console.log('work')
+    localStorage.setItem('a2', JSON.stringify(a2))
+    let b = localStorage.getItem('a2')
+    b = JSON.parse(b)
+    console.log(b)
+    out2.innerHTML = b
 }
-
+let out2 = document.querySelector('.out-2')
+let button2 = document.querySelector('.b-2')
+button2.onclick = t2
 // ваше событие здесь!!!
 
 
