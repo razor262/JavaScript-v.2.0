@@ -86,9 +86,14 @@ button5.onclick = t5
 /*  Создайте функцию t6 которая очищает весь LS. Запуск по кнопке b-6*/
 
 function t6() {
-
+    console.log('work')
+    localStorage.removeItem('a4')
+    localStorage.removeItem('data')
+    localStorage.removeItem('a2')
+    localStorage.removeItem('5')
 }
-
+let b6 = document.querySelector('.b-6')
+b6.onclick = t6
 // ваше событие здесь!!!
 
 
