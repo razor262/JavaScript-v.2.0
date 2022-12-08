@@ -49,11 +49,19 @@ button3.onclick = t3
 
 // Task 4 ============================================
 /*  Создайте функцию t4 которая записывает  в LS  массив a4 = {hello: world, hi:mahai}. Ключ a4. Проверьте что происходит при повторном вызове функции. Запускается ф-я по кнопкуе b-4.*/
+let a4 = {hello: 'world', hi:'mahai'}
 
 function t4() {
-
+    console.log('work')
+    localStorage.setItem('a4', JSON.stringify(a4))
+    let b4 = localStorage.getItem('a4')
+    b4 = JSON.parse(b4)
+    console.log(b4)
+      
 }
-
+//let out4 = document.querySelector('.out-4')
+let button4 = document.querySelector('.b-4')
+button4.onclick = t4
 // ваше событие здесь!!!
 
 // Task 5 ============================================
